@@ -1,21 +1,33 @@
-library(rvest)
-library(janitor)
-library(tidyverse)
 library(distill)
+library(ggplot2)
+library(janitor)
 library(readxl)
+library(rvest)
+library(tidyverse)
 
-#data1 <- read_excel(path = "webtoon_originals_en.xlsx")
+# coord_flip() rotates bars to be horizontal (this improves readability)
+# Divided subscribers by 1 million each to remove scientific notation & simplify subscriber values
 
-data <- read_csv(file = "webtoon_originals_en.csv") |>
-  mutate(title = str_replace(title, pattern = "â€™", "\'")) |>
-  mutate(title = str_replace(synopsis, pattern = "â€™", "\'")) |>
-  arrange(genre)
+working_data <- read_rds("webtoon-data.rds")
 
-data |>
-  ggplot(aes(x = genre)) +
-  geom_bar()+
+working_data |>
+  group_by(genre) |>
+  mutate(newCols = c(subscribers, n()) |>
+  arrange(desc(subscribers)) |>
+  mutate(subscribers = subscribers/1000000) |>
+  ggplot(aes(x = fct_reorder(genre, subscribers),
+             y = subscribers)) +
+  geom_bar(position = "dodge", stat = "identity") +
+  coord_flip() +
+  scale_fill_manual(values = c("#00DC64")) +
   labs(x = "Genre",
-       y = "Number of Webtoon Originals",
+       y = "Number of Subscribers (in millions)",
        title = "Most Popular Genres Among WEBTOON Originals",
        subtitle = "The most popular genre is Fantasy, closely followed by Romance",
-       caption = "Source: Iridazzle on Kaggle (sourced on June 30, 2022)")
+       caption = "Source: Iridazzle on Kaggle (sourced on June 30, 2022)") +
+  theme_minimal() +
+  theme(panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank())
+
+# Include number of Webtoon Originals
+# Include daily pass stats for each genre
