@@ -16,3 +16,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+## Metrics of Success
+Though cut-and-dry figures are not the sole indicator (or, objectively, a good indicator at all) of a "successful" or "good" WEBTOON, data analysis can identify patterns in Originals that statistically perform well among readers.
+
+The follow metrics of success are compared to variables such as genre throughout this project:
+* Number of subscribers
+* Rating
+
+## Data
+Genres vs. Rating
+```{r}
+#include_graphics("genre_ratings.png")
+```

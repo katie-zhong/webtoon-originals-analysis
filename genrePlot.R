@@ -11,9 +11,10 @@ library(tidyverse)
 working_data <- read_rds("webtoon-data.rds")
 
 working_data |>
+  select(genre, subscribers) |>
   group_by(genre) |>
-  summarize(milSubscribers = subscribers/1000000,
-            tracker = as.numeric(c(milSubscribers, originals))) |>
+  summarize(milSubscribers = sum(subscribers)/1000000,
+            tracker = as.numeric(c(milSubscribers, n()))) |>
   
   select(genre, milSubscribers) |>
   arrange(desc(milSubscribers)) |>
