@@ -12,6 +12,7 @@ library(tidyverse)
 
 webt_data <- read_csv(file = "webtoon_originals_en.csv") |>
   clean_names() |>
+  as_tibble() |>
   mutate(genre = str_replace(genre, pattern = "SF", "SCI-FI")) |>
   mutate(genre = str_replace(genre, pattern = "_", " ")) |>
   mutate(genre = str_replace(genre, pattern = "_", " ")) |>
