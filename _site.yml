@@ -8,7 +8,9 @@ navbar:
     - text: "🏡 Home"
       href: index.html
     - text: "👩‍💻 About"
-      href: about.html
+      menu:
+        - href: about.html
+        - href: process.html
     - text: "WEBTOON Recommendations"
       href: recs.html
     - text: "📚 Sources"

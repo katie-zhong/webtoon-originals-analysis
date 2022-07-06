@@ -2,19 +2,67 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
+      "title": "About Project",
       "description": "Some additional details about the website",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-06T13:15:11-04:00"
+      "contents": "\r\n##About The Creator This project was created as part of Preceptor David Kane’s Data\r\nScience Course\r\n##About the Project\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-06T16:18:38-04:00"
     },
     {
       "path": "index.html",
       "title": "What Makes a WEBTOON Original Successful?",
       "description": "Analyzing subscriber count and reader ratings as metrics of success\n",
       "author": [],
-      "contents": "\r\nMetrics of Success\r\nThough cut-and-dry figures are not the sole indicator (or,\r\nobjectively, a good indicator at all) of a “successful” or “good”\r\nWEBTOON, data analysis can identify patterns in Originals that\r\nstatistically perform well among readers.\r\nThe follow metrics of success are compared to variables such as genre\r\nthroughout this project: * Number of subscribers * Rating\r\nData\r\n#Genres and Popularity\r\n\r\n\r\n\r\n#Subscribers vs. Ratings\r\n\r\n\r\n\r\nNote that newly-launched Originals (those with three or more\r\nepisodes) were included within the data used for these graphs, as\r\nsuccess can still be measured with the same variables that apply to\r\nolder Originals. Though newer Originals are more heavily promoted, older\r\nOriginals also received the same treatment when they were launched.\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-06T13:15:12-04:00"
+      "contents": "\r\nMetrics of Success\r\nThough cut-and-dry figures are not necessarily an indicator of a\r\n“good” WEBTOON, data analysis can identify patterns in Originals that\r\nstatistically perform well among readers.\r\nThe follow metrics of success are compared to variables such as genre\r\nthroughout this project:\r\nNumber of subscribers\r\nRating\r\nGenres and Popularity\r\n\r\n\r\n\r\nAverage series ratings are about the same for Originals across all\r\ngenres, with Originals from the Heartwarming genre receiving the highest\r\nand Originals from the Superhero genre receiving the lowest.\r\n\r\n\r\n\r\nRomance wins by a landslide! How very romantic of you, WEBTOON\r\nreaders. Fantasy comes second for number of subscribers, with Action and\r\nDrama at a close third and fourth.\r\nSurprisingly, Heartwarming ranks last in subscriber-based\r\npopularity.\r\nSubscribers vs. Ratings\r\n\r\n\r\n\r\nNote that newly-launched Originals (those with three or more\r\nepisodes) were included within the data used for these graphs, as\r\nsuccess can still be measured with the same variables that apply to\r\nolder Originals. Though newer Originals are more heavily promoted, older\r\nOriginals also received the same treatment when they were launched.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-06T16:18:38-04:00"
+    },
+    {
+      "path": "process.html.html",
+      "title": "Untitled",
+      "description": "A new article created using the Distill format.\n",
+      "author": [
+        {
+          "name": "Nora Jones",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-06T15:02:42-04:00"
+    },
+    {
+      "path": "recs.html.html",
+      "title": "Untitled",
+      "description": "A new article created using the Distill format.\n",
+      "author": [
+        {
+          "name": "Nora Jones",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-06T15:02:43-04:00"
+    },
+    {
+      "path": "source_A.html.html",
+      "author": [],
+      "contents": "\r\ns— title: “Untitled” description: | A new article created using the\r\nDistill format. author: - name: Nora Jones url: https://example.com/norajones affiliation: Spacely\r\nSprockets affiliation_url: https://example.com/spacelysprokets date: “2022-07-06”\r\noutput: distill::distill_article —\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-06T15:02:44-04:00"
+    },
+    {
+      "path": "source_B.html.html",
+      "title": "Untitled",
+      "description": "A new article created using the Distill format.\n",
+      "author": [
+        {
+          "name": "Nora Jones",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-06T15:02:45-04:00"
     }
   ],
   "collections": []

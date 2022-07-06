@@ -1,5 +1,5 @@
 ---
-title: "About this site"
+title: "About Project"
 description: |
   Some additional details about the website
 ---
@@ -8,3 +8,7 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+##About The Creator
+This project was created as part of [Preceptor David Kane's Data Science Course](https://bootcamp.davidkane.info/)
+
+##About the Project
