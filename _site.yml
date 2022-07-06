@@ -1,12 +1,19 @@
 name: "."
-title: "WEBTOON Originals Analysis"
+title: "What Makes a WEBTOON Original Successful?"
 description: |
-  WEBTOON Originals Analysis
+  Analyzing factors of success in WEBTOON Originals
 output_dir: "docs"
 navbar:
-  right:
-    - text: "Home"
+  left:
+    - text: "🏡 Home"
       href: index.html
-    - text: "About"
+    - text: "👩‍💻 About"
       href: about.html
+    - text: "📚 Sources"
+      menu:
+        - text: "Source A"
+          href: source_A.html
+        - text: "Source B"
+          href: source_B.html
+
 output: distill::distill_article

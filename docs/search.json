@@ -6,15 +6,15 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-04T15:47:21-04:00"
+      "last_modified": "2022-07-06T13:15:11-04:00"
     },
     {
       "path": "index.html",
-      "title": "WEBTOON Originals Analysis",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "title": "What Makes a WEBTOON Original Successful?",
+      "description": "Analyzing subscriber count and reader ratings as metrics of success\n",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-04T15:47:22-04:00"
+      "contents": "\r\nMetrics of Success\r\nThough cut-and-dry figures are not the sole indicator (or,\r\nobjectively, a good indicator at all) of a “successful” or “good”\r\nWEBTOON, data analysis can identify patterns in Originals that\r\nstatistically perform well among readers.\r\nThe follow metrics of success are compared to variables such as genre\r\nthroughout this project: * Number of subscribers * Rating\r\nData\r\n#Genres and Popularity\r\n\r\n\r\n\r\n#Subscribers vs. Ratings\r\n\r\n\r\n\r\nNote that newly-launched Originals (those with three or more\r\nepisodes) were included within the data used for these graphs, as\r\nsuccess can still be measured with the same variables that apply to\r\nolder Originals. Though newer Originals are more heavily promoted, older\r\nOriginals also received the same treatment when they were launched.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-06T13:15:12-04:00"
     }
   ],
   "collections": []
