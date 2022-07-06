@@ -9,6 +9,8 @@ navbar:
       href: index.html
     - text: "👩‍💻 About"
       href: about.html
+    - text: "WEBTOON Recommendations"
+      href: recs.html
     - text: "📚 Sources"
       menu:
         - text: "Source A"
