@@ -8,12 +8,13 @@ library(tidyverse)
 # coord_flip() rotates bars to be horizontal (this improves readability)
 # Divided number of subscribers by 1 million each to remove scientific notation & simplify subscriber values
 
-genVsub_data <- read_rds("webtoon-data.rds")
+working_data <- read_rds("webtoon-data.rds")
 
-genre_subscribers_plot <- genVsub_data |>
+genre_subscribers_plot <- working_data |>
   select(genre, subscribers) |>
   group_by(genre) |>
-  summarize(milSubscribers = sum(subscribers)/1000000) |>
+  summarize(milSubscribers = sum(subscribers)/1000000,
+            tracker = as.numeric(c(milSubscribers, n()))) |>
   
   select(genre, milSubscribers) |>
   arrange(desc(milSubscribers)) |>
@@ -28,10 +29,9 @@ genre_subscribers_plot <- genVsub_data |>
        y = "Number of Subscribers (in millions)",
        title = "Most Popular Genres Among WEBTOON Originals",
        subtitle = "The most popular genre is Fantasy, closely followed by Romance",
-       caption = "Source: Iridazzle on Kaggle (June, 2022)") +
+       caption = "Source: Iridazzle on Kaggle \n(774 WEBTOON Originals, sourced on June 30, 2022)") +
   theme_minimal() +
-  theme(plot.title = element_text(face = "bold"),
-        panel.grid.major.x = element_blank(),
+  theme(panel.grid.major.x = element_blank(),
         panel.grid.minor.x = element_blank(),
         axis.line = element_line(colour = "black"),
         legend.position = "none")
