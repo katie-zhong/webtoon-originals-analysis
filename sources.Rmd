@@ -1,10 +1,17 @@
 ---
 title: "Sources"
 output: distill::distill_article
+bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-See Project Notes for more R-related sources!
+See [Project Notes](https://katie-zhong.github.io/webtoon-originals-analysis/projectNotes.html) for more specific R-related sources!
+
+* The dataset used in this project is sourced from Kaggle user Iridazzle. [@iridazzle]
+
+* The R code behind this project was learned through Primer.data. [@primerdata]
+
+* This project website is created using Distill for R Markdown. [@jones2018distill]
