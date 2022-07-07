@@ -13,7 +13,7 @@ gen_rat_plot <- working_data |>
              y = avg_rating,
              fill = webt_green)) +
   geom_col(position = "dodge") +
-  coord_cartesian(ylim = c(8,10)) +
+  coord_cartesian(ylim = c(8.5,10)) +
   theme(plot.title = element_text(face = "bold"),
         axis.text.x = element_text(angle = 45,
                                    vjust = 0.53,
@@ -25,7 +25,7 @@ gen_rat_plot <- working_data |>
         axis.line = element_line(colour = "black"),
         legend.position = "none") +
   labs(title = "Average Ratings Per Genre",
-       subtitle = "Originals from the Heartwarming genre receive the highest ratings while Superhero Originals receive the lowest",
+       subtitle = "Originals from the Heartwarming genre receive the highest ratings\nwhile Superhero Originals receive the lowest",
        x = "Genre",
        y = "Average Rating",
        caption = "Source: Iridazzle on Kaggle (June 30, 2022)") +

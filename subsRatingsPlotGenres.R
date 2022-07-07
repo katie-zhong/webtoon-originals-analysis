@@ -22,12 +22,12 @@ sub_rat_gen_plot <- working_data |>
                           "Genre:", genre, "\n",
                           "Status:", status, "\n",
                           "Synopsis:", synopsis, "\n"))) +
-    geom_point(size = 0.8) +
+    geom_point(alpha = 0.8, size = 0.5) +
     geom_smooth(method = "loess", formula = y~s, color = "black", se = FALSE) +
     facet_wrap(~ genre) +
     labs(x = "Number of Subscribers (in millions)",
          y = "Series Rating",
-         title = "Relationship between Subscribers and Ratings of WEBTOON Originals",
+         title = "Relationship between Subscribers and\nRatings of WEBTOON Originals by Genre",
          caption = "Source: Iridazzle on Kaggle (June, 2022)",
          color = "Rating") +
     theme(plot.title = element_text(face = "bold")) +

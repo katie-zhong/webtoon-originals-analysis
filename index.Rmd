@@ -27,6 +27,8 @@ The follow metrics of success are compared to variables such as genre throughout
 * Rating
 
 
+
+
 ## Genres and Popularity
 ```{r genre_ratings_plot}
 include_graphics("genre_ratings.png")
@@ -49,13 +51,19 @@ Surprisingly, Heartwarming ranks last in subscriber-based popularity, despite re
 ## Subscribers vs. Ratings
 ```{r}
 read_rds(file = "subscribers_ratings_all.rds")
+```
 
+```{r}
 read_rds(file = "subscribers_ratings_genre.rds")
 ```
 
 
 
+
 Note that newly-launched Originals (those with three or more episodes) were included within the data used for these graphs, as success can still be measured with the same variables that apply to older Originals. Though newer Originals are more heavily promoted, older Originals also received the same treatment when they were launched.
+
+
+
 
 ## **Conclusion**
 Viewer ratings and subscriber counts prove that Romance and Fantasy Originals are the most popular.

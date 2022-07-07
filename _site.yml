@@ -15,9 +15,7 @@ navbar:
           href: process.html
     - text: "WEBTOON Recommendations"
       href: recs.html
-    - text: "📚 Sources"\
-        href: source_A.html
-        #- text: "Source B"
-        #  href: source_B.html
+    - text: "📚 Sources"
+      href: sources.html
 
 output: distill::distill_article
