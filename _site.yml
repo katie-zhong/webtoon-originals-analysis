@@ -9,11 +9,11 @@ navbar:
       href: index.html
     - text: "👩‍💻 About"
       menu:
-        - text: "About"
+        - text: "About the Project"
           href: about.html
         - text: "Project Notes"
           href: process.html
-    - text: "WEBTOON Recommendations"
+    - text: "🔖 WEBTOON Recommendations"
       href: recs.html
     - text: "📚 Sources"
       href: sources.html

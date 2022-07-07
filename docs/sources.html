@@ -86,6 +86,27 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
 
   <!--radix_placeholder_meta_tags-->
   <title>What Makes a WEBTOON Original Successful?: Sources</title>
@@ -104,10 +125,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta property="twitter:title" content="What Makes a WEBTOON Original Successful?: Sources"/>
 
   <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Distill for r markdown;citation_publication_date=2018;citation_doi=10.23915/distill.00010;citation_author=Nora Jones"/>
+  <meta name="citation_reference" content="citation_title=Primer.data;citation_publication_date=2020;citation_publisher=;citation_author=David Kane"/>
+  <meta name="citation_reference" content="citation_title=Datasets of WEBTOON ORIGINALS;citation_publication_date=2022;citation_publisher=;citation_author= Iridazzle"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Sources"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Sources"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["bibliography.bib"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2126,9 +2151,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>See Project Notes for more R-related sources!</p>
+<p>See <a
+href="https://katie-zhong.github.io/webtoon-originals-analysis/projectNotes.html">Project
+Notes</a> for more specific R-related sources!</p>
+<ul>
+<li><p>The <a
+href="https://www.kaggle.com/datasets/iridazzle/webtoon-originals-datasets">dataset</a>
+used in this project is sourced from Kaggle user Iridazzle. <span
+class="citation" data-cites="iridazzle">(<a href="#ref-iridazzle"
+role="doc-biblioref">Iridazzle 2022</a>)</span></p></li>
+<li><p>The R code behind this project was learned through Primer.data.
+<span class="citation" data-cites="primerdata">(<a
+href="#ref-primerdata" role="doc-biblioref">Kane
+2020</a>)</span></p></li>
+<li><p>This project website is created using Distill for R Markdown.
+<span class="citation" data-cites="jones2018distill">(<a
+href="#ref-jones2018distill" role="doc-biblioref">Jones
+2018</a>)</span></p></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-iridazzle" class="csl-entry" role="doc-biblioentry">
+Iridazzle. 2022. <em>Datasets of WEBTOON ORIGINALS</em>.
+</div>
+<div id="ref-jones2018distill" class="csl-entry" role="doc-biblioentry">
+Jones, Nora. 2018. <span>“Distill for r Markdown.”</span> <em>Journal of
+Data Science Software</em>. <a
+href="https://doi.org/10.23915/distill.00010">https://doi.org/10.23915/distill.00010</a>.
+</div>
+<div id="ref-primerdata" class="csl-entry" role="doc-biblioentry">
+Kane, David. 2020. <em>Primer.data</em>.
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2140,7 +2196,10 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+<h3 id="references">References</h3>
+<div id="references-listing"></div>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->
