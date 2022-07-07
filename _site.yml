@@ -15,10 +15,8 @@ navbar:
           href: process.html
     - text: "WEBTOON Recommendations"
       href: recs.html
-    - text: "📚 Sources"
-      menu:
-        - text: "Source A"
-          href: source_A.html
+    - text: "📚 Sources"\
+        href: source_A.html
         #- text: "Source B"
         #  href: source_B.html
 

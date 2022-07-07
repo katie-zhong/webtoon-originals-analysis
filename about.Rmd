@@ -12,10 +12,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 *What Makes a WEBTOON Original Successful?* provides insight on what makes WEBTOON Originals (WEBTOON-sponsored series) popular among readers.
 
-This project was created as part of the amazing [David Kane's Data Science Course](https://bootcamp.davidkane.info/). Thank you to Preceptor Kane and the wonderful TFs that made this experience so enjoyable and rewarding! :)
+**This project was created as part of the amazing [David Kane's Data Science Course](https://bootcamp.davidkane.info/). Thank you to the hilarious Preceptor Kane, our superhero TFs, and the supportive classmates that made this experience so enjoyable and rewarding! :)**
 
 
 ## About The Creator
-Hey! It's me, that little voice writing out all these words. My name is **Katie Zhong** and I'm an incoming Honours Mathematics (co-op) freshman at the University of Waterloo.
+Hey! It's me, that little voice writing out all these words, finally introducing myself. My name is **Katie Zhong** and I'm an incoming Honours Mathematics freshman at the University of Waterloo.
 
 I love music, reading, stories, and art (as you may have guessed 😅). Got any recommendations? [Feel free to share](https://www.linkedin.com/in/katie-zhong-163684163/), I'll give anything a try!

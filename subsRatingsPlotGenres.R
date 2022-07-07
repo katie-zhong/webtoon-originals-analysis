@@ -23,7 +23,7 @@ sub_rat_gen_plot <- working_data |>
                           "Status:", status, "\n",
                           "Synopsis:", synopsis, "\n"))) +
     geom_point(size = 0.8) +
-    geom_smooth() +
+    geom_smooth(method = "loess", formula = y~s, color = "black", se = FALSE) +
     facet_wrap(~ genre) +
     labs(x = "Number of Subscribers (in millions)",
          y = "Series Rating",
@@ -31,13 +31,12 @@ sub_rat_gen_plot <- working_data |>
          caption = "Source: Iridazzle on Kaggle (June, 2022)",
          color = "Rating") +
     theme(plot.title = element_text(face = "bold")) +
-    scale_colour_gradient(low = "#101f09",
-                          high = "#00dc64",
+    scale_colour_gradient(low = dark_green,
+                          high = webt_green,
                           space = "Lab",
                           na.value = "grey50",
                           guide = "colourbar",
                           aesthetics = "colour")
 
 gg_sub_rat_gen <- ggplotly(sub_rat_gen_plot, tooltip = "text")
-
-htmlwidgets::saveWidget(gg_sub_rat_gen, "subscribers_ratings_genre.html")
+write_rds(gg_sub_rat_gen, "subscribers_ratings_genre.rds")

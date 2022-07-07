@@ -1,14 +1,21 @@
 ---
-title: "What Makes a WEBTOON Original Successful?"
+title: "Factors of Success in WEBTOON Originals"
 description: |
-  Analyzing subscriber count and reader ratings as metrics of success
+  What Makes a WEBTOON Original Successful? Analyzing subscriber count and reader ratings as metrics of success.
 site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
+library(distill)
+library(ggplot2)
+library(janitor)
 library(knitr)
+library(plotly)
+library(readxl)
+library(rvest)
+library(tidyverse)
 ```
 
 ## **Metrics of Success**
@@ -21,7 +28,7 @@ The follow metrics of success are compared to variables such as genre throughout
 
 
 ## Genres and Popularity
-```{r}
+```{r genre_ratings_plot}
 include_graphics("genre_ratings.png")
 ```
 
@@ -29,7 +36,7 @@ include_graphics("genre_ratings.png")
 Average series ratings are about the same for Originals across all genres, with Originals from the Heartwarming genre receiving the highest and Originals from the Superhero genre receiving the lowest.
 
 
-```{r}
+```{r genre_subscribers_plot}
 include_graphics("genre_subscribers.png")
 ```
 
@@ -41,11 +48,14 @@ Surprisingly, Heartwarming ranks last in subscriber-based popularity, despite re
 
 ## Subscribers vs. Ratings
 ```{r}
-#htmltools::includeHTML("subscribers_ratings_all.html")
+read_rds(file = "subscribers_ratings_all.rds")
 
-include_graphics("subscribers_ratings_all.html")
-#include_graphics("subscribers_ratings_genre.html")
+read_rds(file = "subscribers_ratings_genre.rds")
 ```
 
 
+
 Note that newly-launched Originals (those with three or more episodes) were included within the data used for these graphs, as success can still be measured with the same variables that apply to older Originals. Though newer Originals are more heavily promoted, older Originals also received the same treatment when they were launched.
+
+## **Conclusion**
+Viewer ratings and subscriber counts prove that Romance and Fantasy Originals are the most popular.
