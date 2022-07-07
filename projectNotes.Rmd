@@ -1,0 +1,22 @@
+---
+title: "Project Notes"
+description: |
+  Documenting some pointers for the R code behind this project.
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The following sources helped me solve specific challenges in my graphs!
+
+You can also see this project's [Github repo here](https://github.com/katie-zhong/webtoon-originals-analysis).
+
+* [R Naming Stylistic Guideline - Advanced R by Hadley Wickham](http://adv-r.had.co.nz/Style.html)
+* [Horizontal Barplot in ggplot 2 - Stack Overflow](https://stackoverflow.com/questions/10941225/horizontal-barplot-in-ggplot2)
+* [Rotating and spacing axis labels in ggplot 2 - Stack Overflow](https://stackoverflow.com/questions/1330989/rotating-and-spacing-axis-labels-in-ggplot2)
+* [Remove grid and background from plot (ggplot2) - Felix Fan](https://felixfan.github.io/ggplot2-remove-grid-background-margin/)
+* [How to change the color of bars of a bar plot using ggplot2 in R? - Tutorials Point](https://www.tutorialspoint.com/how-to-change-the-color-of-bars-of-a-bar-plot-using-ggplot2-in-r)
+* [str_wrap function - RDocumentation](https://www.rdocumentation.org/packages/stringr/versions/1.4.0/topics/str_wrap)
+* [Gradient colour scales (scale_colour_gradient)	- ggplot2 Documentation](https://ggplot2.tidyverse.org/reference/scale_gradient.html)

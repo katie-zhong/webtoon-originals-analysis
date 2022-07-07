@@ -1,7 +1,5 @@
 ---
 title: "Katie's WEBTOON Recommendations"
-description: |
-  A new article created using the Distill format.
 output: distill::distill_article
 ---
 

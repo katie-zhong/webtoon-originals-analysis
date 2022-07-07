@@ -35,7 +35,9 @@ sub_rat_all_plot <- working_data |>
          title = "Relationship between Subscribers and\nRatings of WEBTOON Originals",
          caption = "Source: Iridazzle on Kaggle (June, 2022)",
          color = "Rating") +
-    theme(plot.title = element_text(face = "bold")) +
+    theme(plot.title = element_text(face = "bold",
+                                    margin = margin(0,0,30,0),
+                                    size = 18)) +
     scale_colour_gradient(low = dark_green,
                           high = webt_green,
                           space = "Lab",

@@ -1,7 +1,7 @@
 ---
 title: "Factors of Success in WEBTOON Originals"
 description: |
-  What Makes a WEBTOON Original Successful? Analyzing subscriber count and reader ratings as metrics of success.
+  What Makes a WEBTOON Original Successful? Subscriber counts and reader ratings can be analyzed as metrics of success to find out.
 site: distill::distill_website
 ---
 
