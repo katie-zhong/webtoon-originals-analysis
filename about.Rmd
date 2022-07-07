@@ -1,14 +1,21 @@
 ---
-title: "About Project"
-description: |
-  Some additional details about the website
+title: "About"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-##About The Creator
-This project was created as part of [Preceptor David Kane's Data Science Course](https://bootcamp.davidkane.info/)
 
-##About the Project
+## About the Project
+[WEBTOON](https://www.webtoons.com/en/) is a platform that has made the age-old art of visual storytelling accessible to anyone with an internet connection anywhere, whether they're a reader or an author.
+
+*What Makes a WEBTOON Original Successful?* provides insight on what makes WEBTOON Originals (WEBTOON-sponsored series) popular among readers.
+
+This project was created as part of the amazing [David Kane's Data Science Course](https://bootcamp.davidkane.info/). Thank you to Preceptor Kane and the wonderful TFs that made this experience so enjoyable and rewarding! :)
+
+
+## About The Creator
+Hey! It's me, that little voice writing out all these words. My name is **Katie Zhong** and I'm an incoming Honours Mathematics (co-op) freshman at the University of Waterloo.
+
+I love music, reading, stories, and art (as you may have guessed 😅). Got any recommendations? [Feel free to share](https://www.linkedin.com/in/katie-zhong-163684163/), I'll give anything a try!

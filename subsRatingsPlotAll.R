@@ -16,7 +16,6 @@ sub_rat_all_plot <- working_data |>
   arrange(desc(subscribers)) |>
   ggplot(aes(x = subscribers,
              y = rating,
-             color = rating,
              text = paste("Title:", title, "\n",
                           "Author(s):", authors, "\n",
                           "Genre:", genre, "\n",
@@ -30,14 +29,13 @@ sub_rat_all_plot <- working_data |>
          caption = "Source: Iridazzle on Kaggle (June, 2022)",
          color = "Rating") +
     theme(plot.title = element_text(face = "bold")) +
-    scale_colour_gradient(low = muted("#00dc64"),
-                          mid = "#006400",
-                          high = "#101f09",
+    scale_colour_gradient(low = "#101f09",
+                          high = "#00dc64",
                           space = "Lab",
                           na.value = "grey50",
                           guide = "colourbar",
                           aesthetics = "colour")
 
-ggplotly(sub_rat_all_plot, tooltip = "text")
+gg_sub_rat_all <- ggplotly(sub_rat_all_plot, tooltip = "text")
 
-#ggsave("subscribers_ratings_all.html", sub_rat_all_plot)
+htmlwidgets::saveWidget(gg_sub_rat_all, "subscribers_ratings_all.html")

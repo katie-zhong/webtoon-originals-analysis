@@ -7,6 +7,7 @@ site: distill::distill_website
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
 library(knitr)
 ```
 
@@ -35,13 +36,15 @@ include_graphics("genre_subscribers.png")
 
 Romance wins by a landslide! How very romantic of you, WEBTOON readers. Fantasy comes second for number of subscribers, with Action and Drama at a close third and fourth.
 
-Surprisingly, Heartwarming ranks last in subscriber-based popularity.
+Surprisingly, Heartwarming ranks last in subscriber-based popularity, despite receiving the highest ratings.
 
 
 ## Subscribers vs. Ratings
 ```{r}
-include_graphics("subscribers_ratings_all.png")
-include_graphics("subscribers_ratings_genre.png")
+#htmltools::includeHTML("subscribers_ratings_all.html")
+
+include_graphics("subscribers_ratings_all.html")
+#include_graphics("subscribers_ratings_genre.html")
 ```
 
 
