@@ -9,11 +9,13 @@ gen_rat_plot <- working_data |>
   group_by(genre) |>
   summarize(avg_rating = mean(rating)) |>
   arrange(desc(avg_rating)) |>
+  
   ggplot(aes(x = fct_reorder(genre, avg_rating, .desc = TRUE),
              y = avg_rating,
              fill = webt_green)) +
   geom_col(position = "dodge") +
   coord_cartesian(ylim = c(8.5,10)) +
+  
   theme(plot.title = element_text(face = "bold"),
         axis.text.x = element_text(angle = 45,
                                    vjust = 0.53,

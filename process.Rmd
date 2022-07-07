@@ -1,7 +1,7 @@
 ---
-title: "Process"
+title: "Project Notes"
 description: |
-  Documenting some pointers that seriously helped
+  Documenting some pointers for the R code behind this project.
 output: distill::distill_article
 ---
 

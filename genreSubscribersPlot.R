@@ -22,6 +22,7 @@ gen_sub_plot <- working_data |>
     geom_bar(position = "dodge", stat = "identity") +
     coord_flip() +
     scale_fill_manual(values = c("#00DC64")) +
+  
     labs(x = "Genre",
          y = "Number of Subscribers (in millions)",
          title = "Most Subscribed-to Genres Among WEBTOON Originals",

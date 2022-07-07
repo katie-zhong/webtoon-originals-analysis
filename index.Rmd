@@ -45,23 +45,17 @@ include_graphics("genre_subscribers.png")
 
 Romance wins by a landslide! How very romantic of you, WEBTOON readers. Fantasy comes second for number of subscribers, with Action and Drama at a close third and fourth.
 
-Surprisingly, Heartwarming ranks last in subscriber-based popularity, despite receiving the highest ratings.
+Heartwarming ranking last in subscriber-based popularity, despite receiving the highest ratings, makes sense as there are only 2 Originals in the Heartwarming genre. (WEBTOON authors, do you see this unfulfilled market niche? 👀)
 
 
 ## Subscribers vs. Ratings
-```{r}
+```{r subscribers_ratings_all_plot}
 read_rds(file = "subscribers_ratings_all.rds")
 ```
 
-```{r}
+```{r subscribers_ratings_genre_plot}
 read_rds(file = "subscribers_ratings_genre.rds")
 ```
-
-
-
-
-Note that newly-launched Originals (those with three or more episodes) were included within the data used for these graphs, as success can still be measured with the same variables that apply to older Originals. Though newer Originals are more heavily promoted, older Originals also received the same treatment when they were launched.
-
 
 
 

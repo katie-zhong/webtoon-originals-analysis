@@ -4,40 +4,39 @@
       "path": "about.html",
       "title": "About",
       "author": [],
-      "contents": "\r\nAbout the Project\r\nWEBTOON is a platform that\r\nhas made the age-old art of visual storytelling accessible to anyone\r\nwith an internet connection anywhere, whether they’re a reader or an\r\nauthor.\r\nWhat Makes a WEBTOON Original Successful? provides insight\r\non what makes WEBTOON Originals (WEBTOON-sponsored series) popular among\r\nreaders.\r\nThis project was created as part of the amazing David Kane’s Data Science\r\nCourse. Thank you to the hilarious Preceptor Kane, our superhero\r\nTFs, and the supportive classmates that made this experience so\r\nenjoyable and rewarding! :)\r\nAbout The Creator\r\nHey! It’s me, that little voice writing out all these words, finally\r\nintroducing myself. My name is Katie Zhong and I’m an\r\nincoming Honours Mathematics freshman at the University of Waterloo.\r\nI love music, reading, stories, and art (as you may have guessed 😅).\r\nGot any recommendations? Feel free to\r\nshare, I’ll give anything a try!\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T15:27:16-04:00"
+      "contents": "\r\nAbout the Project\r\nWEBTOON is a platform that\r\nhas made the age-old art of visual storytelling accessible to anyone\r\nwith an internet connection anywhere, whether they’re a reader or an\r\nauthor.\r\nWhat Makes a WEBTOON Original Successful? provides insight\r\non what makes WEBTOON Originals (WEBTOON-sponsored series) popular among\r\nreaders.\r\nThis project was created as part of the amazing David Kane’s Data Science\r\nCourse. Thank you to our “dear leader” Preceptor Kane, our superhero\r\nTFs, and the supportive classmates that made this experience so\r\nenjoyable and rewarding! :)\r\nAbout The Creator\r\nHey! It’s me, that little voice writing out all these words, finally\r\nintroducing myself. My name is Katie Zhong and I’m an\r\nincoming Honours Mathematics freshman at the University of Waterloo.\r\nI love music, reading, stories, and art (as you may have guessed 😅).\r\nGot any recommendations? Feel free to\r\nshare, I’ll give anything a try!\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T17:03:55-04:00"
     },
     {
       "path": "index.html",
       "title": "Factors of Success in WEBTOON Originals",
       "description": "What Makes a WEBTOON Original Successful? Analyzing subscriber count and reader ratings as metrics of success.\n",
       "author": [],
-      "contents": "\r\nMetrics of Success\r\nThough cut-and-dry figures are not necessarily an indicator of a\r\n“good” WEBTOON, data analysis can identify patterns in Originals that\r\nstatistically perform well among readers.\r\nThe follow metrics of success are compared to variables such as genre\r\nthroughout this project:\r\nNumber of subscribers\r\nRating\r\nGenres and Popularity\r\n\r\n\r\n\r\nAverage series ratings are about the same for Originals across all\r\ngenres, with Originals from the Heartwarming genre receiving the highest\r\nand Originals from the Superhero genre receiving the lowest.\r\n\r\n\r\n\r\nRomance wins by a landslide! How very romantic of you, WEBTOON\r\nreaders. Fantasy comes second for number of subscribers, with Action and\r\nDrama at a close third and fourth.\r\nSurprisingly, Heartwarming ranks last in subscriber-based popularity,\r\ndespite receiving the highest ratings.\r\nSubscribers vs. Ratings\r\n\r\n\r\n\r\n\r\n\r\n\r\nNote that newly-launched Originals (those with three or more\r\nepisodes) were included within the data used for these graphs, as\r\nsuccess can still be measured with the same variables that apply to\r\nolder Originals. Though newer Originals are more heavily promoted, older\r\nOriginals also received the same treatment when they were launched.\r\nConclusion\r\nViewer ratings and subscriber counts prove that Romance and Fantasy\r\nOriginals are the most popular.\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T15:27:23-04:00"
+      "contents": "\r\nMetrics of Success\r\nThough cut-and-dry figures are not necessarily an indicator of a\r\n“good” WEBTOON, data analysis can identify patterns in Originals that\r\nstatistically perform well among readers.\r\nThe follow metrics of success are compared to variables such as genre\r\nthroughout this project:\r\nNumber of subscribers\r\nRating\r\nGenres and Popularity\r\n\r\n\r\n\r\nAverage series ratings are about the same for Originals across all\r\ngenres, with Originals from the Heartwarming genre receiving the highest\r\nand Originals from the Superhero genre receiving the lowest.\r\n\r\n\r\n\r\nRomance wins by a landslide! How very romantic of you, WEBTOON\r\nreaders. Fantasy comes second for number of subscribers, with Action and\r\nDrama at a close third and fourth.\r\nHeartwarming ranking last in subscriber-based popularity, despite\r\nreceiving the highest ratings, makes sense as there are only 2 Originals\r\nin the Heartwarming genre. (WEBTOON authors, do you see this unfulfilled\r\nmarket niche? 👀)\r\nSubscribers vs. Ratings\r\n\r\n\r\n\r\n\r\n\r\n\r\nConclusion\r\nViewer ratings and subscriber counts prove that Romance and Fantasy\r\nOriginals are the most popular.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T17:04:01-04:00"
     },
     {
       "path": "process.html",
-      "title": "Process",
-      "description": "Documenting some pointers that seriously helped\n",
+      "title": "Project Notes",
+      "description": "Documenting some pointers for the R code behind this project.\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T15:27:24-04:00"
+      "last_modified": "2022-07-07T17:04:02-04:00"
     },
     {
       "path": "recs.html",
       "title": "Katie's WEBTOON Recommendations",
       "description": "A new article created using the Distill format.\n",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T15:27:25-04:00"
+      "contents": "\r\nIt’d be criminal of me to create a WEBTOON-themed project and not\r\nprovide recommendations, eh? Take a gander at some of my favorites\r\nbelow, in alphabetic order!\r\nYou can find the synopses online, so I’ll just be providing my two\r\ncents. 😉\r\nOriginal Recommendations\r\nBig Jo, Jungle Julia\r\nEleceed, Jeho Son and ZHENA\r\nA light read with humorous moments, mindboggling action scenes, and\r\nadorable character relationships. Lovely, atmospheric art to pair.\r\n(Also: the author draws cats in the absolute best way!)\r\n\r\nMoon You, Cho Seok\r\nDaily Pass\r\n\r\nMuted, \r\nParallel City, Goda\r\nPurple Hyacinth, Ephemerys and\r\nSophism\r\nEven if murder mystery with unbearable romantic tension isn’t\r\nexactly your cup of tea, PH’s undeniable quality may just win you over.\r\nThe delightfully written characters and ingenious plot combined with the\r\ncinematic and deliberately meme-packed art make this one a veritable\r\nWEBTOON Original classic.\r\n\r\nRoom of Swords, Toonimated\r\nSee You in My 19th Life, Lee\r\nHey,\r\nThe Croaking echorise\r\nThe Red King, Heylenne\r\nYour Smile is a Trap, AENGO\r\nCanvas Recommendations\r\nBOMIC: A Bom Comic, c2oh\r\nBUUZA!, Shazleen Khan\r\nCarciphona, Shilin\r\nOne of my favorite authors/artists of all time\r\nI’ll also recommend Shilin’s Amongst Us (no, it’s not\r\nrelated to the game Among Us), the modern spin-off of Carciphona!\r\n\r\nImmortal Affairs, Blue.Owl\r\nRevelation of Eros, AkumaYoru\r\nThis Isekai Maid is Forming a Union!, Frostlight\r\nComics\r\nThe nuanced looks at problematic media and multidimensional\r\ncharacters blow my mind each chapter.\r\n\r\n",
+      "last_modified": "2022-07-07T17:04:02-04:00"
     },
     {
       "path": "sources.html",
-      "title": "Untitled",
-      "description": "A new article created using the Distill format.\n",
+      "title": "Sources",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T15:27:26-04:00"
+      "contents": "\r\nSee Project Notes for more R-related sources!\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T17:04:03-04:00"
     }
   ],
   "collections": []

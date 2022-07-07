@@ -9,3 +9,51 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+It'd be criminal of me to create a WEBTOON-themed project and not provide recommendations, eh? Take a gander at some of my favorites below, in alphabetic order!
+
+You can find the synopses online, so I'll just be providing my two cents. 😉
+
+
+## Original Recommendations
+* ***Big Jo*, Jungle Julia**
+
+* ***Eleceed*, Jeho Son and ZHENA**
+  + A light read with humorous moments, mindboggling action scenes, and adorable character relationships. Lovely, atmospheric art to pair.
+  + (Also: the author draws cats in the absolute best way!)
+
+* ***Moon You*, Cho Seok**
+  + Daily Pass
+
+* ***Muted*, **
+
+* ***Parallel City*, Goda**
+
+* ***Purple Hyacinth*, Ephemerys and Sophism**
+  + Even if murder mystery with unbearable romantic tension isn't exactly your cup of tea, PH's undeniable quality may just win you over. The delightfully written characters and ingenious plot combined with the cinematic and deliberately meme-packed art make this one a veritable WEBTOON Original classic.
+
+* ***Room of Swords*, Toonimated**
+
+* ***See You in My 19th Life*, Lee Hey**, 
+
+* ***The Croaking* echorise**
+
+* ***The Red King*, Heylenne**
+
+* ***Your Smile is a Trap*, AENGO**
+
+
+## Canvas Recommendations
+* ***BOMIC: A Bom Comic*, c2oh**
+
+* ***BUUZA!*, Shazleen Khan**
+
+* ***Carciphona*, Shilin**
+  + One of my favorite authors/artists of all time
+  + I'll also recommend Shilin's *Amongst Us* (no, it's not related to the game Among Us), the modern spin-off of Carciphona!
+
+* ***Immortal Affairs*, Blue.Owl**
+
+* ***Revelation of Eros*, AkumaYoru**
+
+* ***This Isekai Maid is Forming a Union!*, Frostlight Comics**
+  + The nuanced looks at problematic media and multidimensional characters blow my mind each chapter.
