@@ -12,7 +12,7 @@ navbar:
         - text: "About the Project"
           href: about.html
         - text: "Project Notes"
-          href: process.html
+          href: projectNotes.html
     - text: "🔖 WEBTOON Recommendations"
       href: recs.html
     - text: "📚 Sources"
