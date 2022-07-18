@@ -35,7 +35,7 @@ include_graphics("genre_ratings.png")
 ```
 
 
-Average series ratings are about the same for Originals across all genres, with Originals from the Heartwarming genre receiving the highest and Originals from the Superhero genre receiving the lowest.
+Note that the y-axis scale starts at 8.5 to emphasize the rating differences. Average series ratings are about the same for Originals across all genres, with Originals from the Heartwarming genre receiving the highest and Originals from the Superhero genre receiving the lowest.
 
 
 ```{r genre_subscribers_plot}

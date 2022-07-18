@@ -5,17 +5,15 @@ description: |
 output_dir: "docs"
 navbar:
   left:
-    - text: "🏡 Home"
-      href: index.html
     - text: "👩‍💻 About"
-      menu:
-        - text: "About the Project"
-          href: about.html
-        - text: "Project Notes"
-          href: projectNotes.html
+      href: about.html
     - text: "🔖 WEBTOON Recommendations"
       href: recs.html
     - text: "📚 Sources"
-      href: sources.html
+      menu:
+        - text: "General Sources"
+          href: sources.html
+        - text: "Project Notes"
+          href: projectNotes.html
 
 output: distill::distill_article

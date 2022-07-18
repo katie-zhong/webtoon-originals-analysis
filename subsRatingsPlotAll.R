@@ -27,23 +27,23 @@ sub_rat_all_plot <- working_data |>
                           "Genre:", genre, "\n",
                           "Status:", status, "\n",
                           "Synopsis:", synopsis, "\n"))) +
-    geom_point(alpha = 0.8, size = 0.5) +
-    geom_smooth(method = "loess", formula = y~s, color = "black", se = FALSE) +
+  geom_point(alpha = 0.8, size = 0.5) +
+  geom_smooth(method = "loess", formula = y~s, color = "black", se = FALSE) +
   
-    labs(x = "Number of Subscribers (in millions)",
-         y = "Series Rating",
-         title = "Relationship between Subscribers and\nRatings of WEBTOON Originals",
-         caption = "Source: Iridazzle on Kaggle (June, 2022)",
-         color = "Rating") +
-    theme(plot.title = element_text(face = "bold",
-                                    margin = margin(0,0,30,0),
-                                    size = 18)) +
-    scale_colour_gradient(low = dark_green,
-                          high = webt_green,
-                          space = "Lab",
-                          na.value = "grey50",
-                          guide = "colourbar",
-                          aesthetics = "colour")
+  labs(x = "Number of Subscribers (in millions)",
+       y = "Series Rating",
+       title = "Relationship between Subscribers and\nRatings of WEBTOON Originals",
+       caption = "Source: Iridazzle on Kaggle (June, 2022)",
+       color = "Rating") +
+  theme(plot.title = element_text(face = "bold",
+                                  margin = margin(0,0,30,0),
+                                  size = 18)) +
+  scale_colour_gradient(low = dark_green,
+                        high = webt_green,
+                        space = "Lab",
+                        na.value = "grey50",
+                        guide = "colourbar",
+                        aesthetics = "colour")
 
 gg_sub_rat_all <- ggplotly(sub_rat_all_plot, tooltip = "text")
 write_rds(gg_sub_rat_all, "subscribers_ratings_all.rds")

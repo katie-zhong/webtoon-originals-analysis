@@ -18,4 +18,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ## About The Creator
 Hey! It's me, that little voice writing out all these words, finally introducing myself. My name is **Katie Zhong** and I'm an incoming Honours Mathematics freshman at the University of Waterloo.
 
-I love music, reading, stories, and art (as you may have guessed 😅). Got any recommendations? [Feel free to share](https://www.linkedin.com/in/katie-zhong-163684163/), I'll give anything a try!
+I love music, reading, stories, and art (as you may have guessed 😅). Got any recommendations? Feel free to [share with me on LinkedIn](https://www.linkedin.com/in/katie-zhong-163684163/), I'll give anything a try!
+
+If you have any **questions or suggestions** for this project or **opportunities to further explore data science**, please do reach out to my email, [tokatiezhong@gmail.com](mailto:tokatiezhong@gmail.com) !
