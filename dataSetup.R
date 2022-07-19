@@ -5,7 +5,7 @@ library(tidyverse)
 
 
 # In the original CSV, apostrophes are replaced with unquoted string "â€™" in the synopses. 
-  # To improve reader understanding, mutate() is used to remedy this error
+# To improve reader understanding, mutate() is used to remedy this error
 
 # str_replace() for pattern = "_" is used twice to change the second pattern occurrence in SLICE_OF_LIFE
 

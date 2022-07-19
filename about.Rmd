@@ -12,12 +12,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 This project attempts to answer the question *What Makes a WEBTOON Original Successful?* and provides insight on what makes WEBTOON Originals (WEBTOON-sponsored series) popular among readers.
 
-**This project was created as part of the amazing [David Kane's Data Science Course](https://bootcamp.davidkane.info/). Thank you to our "dear leader" Preceptor Kane, our superhero TFs, and the supportive classmates that made this experience so enjoyable and rewarding! :)**
+**This project was created as part of the amazing [David Kane's Data Science Course](https://bootcamp.davidkane.info/), offered by [former Harvard Preceptor David Kane](https://www.davidkane.info/).**
+
+**The warmest of thank yous to the wonderful Preceptor Kane, our superhero TFs, and the supportive classmates that made this experience so enjoyable and rewarding! :)**
 
 
 ## About The Creator
 Hey! It's me, that little voice writing out all these words, finally introducing myself. My name is **Katie Zhong** and I'm an incoming Honours Mathematics freshman at the University of Waterloo.
 
-I love music, reading, stories, and art (as you may have guessed 😅). Got any recommendations? Feel free to [share with me on LinkedIn](https://www.linkedin.com/in/katie-zhong-163684163/), I'll give anything a try!
+I love music, reading, stories, and art (as you may have guessed 😅).
 
-If you have any **questions or suggestions** for this project or **opportunities to further explore data science**, please do reach out to my email, [tokatiezhong@gmail.com](mailto:tokatiezhong@gmail.com) !
+Feel free to reach out with any **music/book/WEBTOON recommendations**, **questions/suggestions** for this project, or **opportunities to further explore data science**!
+  + [📧 tokatiezhong@gmail.com](mailto:tokatiezhong@gmail.com)
+  + [💼 LinkedIn](https://www.linkedin.com/in/katie-zhong-163684163/)
+  + [🐱‍💻 GitHub](https://github.com/katie-zhong)
