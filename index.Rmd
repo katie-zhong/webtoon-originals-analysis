@@ -49,6 +49,10 @@ Heartwarming ranking last in subscriber-based popularity, despite receiving the 
 
 
 ## Subscribers vs. Ratings
+```{r originals_per_genre_table}
+read_rds(file = "originals_per_genre.rds")
+```
+
 ```{r subscribers_ratings_all_plot}
 read_rds(file = "subscribers_ratings_all.rds")
 ```
