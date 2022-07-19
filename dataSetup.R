@@ -24,4 +24,3 @@ working_data <- read_rds("webtoon-data.rds")
 
 webt_green <- "#00dc64"
 dark_green <- "#101f09"
-  

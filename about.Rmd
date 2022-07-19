@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## About the Project
 [WEBTOON](https://www.webtoons.com/en/) is a platform that has made the age-old art of visual storytelling accessible to anyone with an internet connection anywhere, whether they're a reader or an author.
 
-*What Makes a WEBTOON Original Successful?* provides insight on what makes WEBTOON Originals (WEBTOON-sponsored series) popular among readers.
+This project attempts to answer the question *What Makes a WEBTOON Original Successful?* and provides insight on what makes WEBTOON Originals (WEBTOON-sponsored series) popular among readers.
 
 **This project was created as part of the amazing [David Kane's Data Science Course](https://bootcamp.davidkane.info/). Thank you to our "dear leader" Preceptor Kane, our superhero TFs, and the supportive classmates that made this experience so enjoyable and rewarding! :)**
 
