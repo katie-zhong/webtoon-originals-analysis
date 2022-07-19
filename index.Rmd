@@ -28,6 +28,15 @@ The follow metrics of success are compared to variables such as genre throughout
 
 
 
+Here are the most popular Originals from all genres, as ranked by WEBTOON:
+
+
+
+```{r popular_all_genres_image}
+include_graphics("pop_all_genres.png")
+```
+*Source: [WEBTOON](https://www.webtoons.com/en/top)*
+
 
 ## Genres and Popularity
 ```{r genre_ratings_plot}
