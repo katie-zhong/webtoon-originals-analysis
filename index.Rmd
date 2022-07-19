@@ -35,7 +35,7 @@ Here are the most popular Originals from all genres, as ranked by WEBTOON:
 ```{r popular_all_genres_image}
 include_graphics("pop_all_genres.png")
 ```
-*Source: [WEBTOON](https://www.webtoons.com/en/top)*
+*Source: [WEBTOON, July 2022](https://www.webtoons.com/en/top)*
 
 
 ## Genres and Popularity
