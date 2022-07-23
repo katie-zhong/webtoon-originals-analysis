@@ -16,6 +16,8 @@ library(plotly)
 library(readxl)
 library(rvest)
 library(tidyverse)
+
+# Note that the use of whitespace in the code below prevents various undesired formatting errors on the website
 ```
 
 ## **Metrics of Success**
@@ -28,14 +30,29 @@ The follow metrics of success are compared to variables such as genre throughout
 
 
 
-Here are the most popular Originals from all genres, as ranked by WEBTOON:
+As ranked by WEBTOON, the most popular Originals from genres are:
+
+
+
+**Figure 1**
 
 
 
 ```{r popular_all_genres_image}
 include_graphics("pop_all_genres.png")
 ```
-*Source: [WEBTOON, July 2022](https://www.webtoons.com/en/top)*
+*Top Originals from all genres. (WEBTOON, 2022)*
+
+
+
+**Figure 2**
+
+
+
+```{r originals_per_genre_table, echo=FALSE}
+read_rds(file = "originals_per_genre.rds")
+```
+*Genre distribution in the sample dataset of 774 WEBTOONs. (Kaggle, 2022)*
 
 
 ## Genres and Popularity
@@ -58,10 +75,6 @@ Heartwarming ranking last in subscriber-based popularity, despite receiving the 
 
 
 ## Subscribers vs. Ratings
-```{r originals_per_genre_table}
-read_rds(file = "originals_per_genre.rds")
-```
-
 ```{r subscribers_ratings_all_plot}
 read_rds(file = "subscribers_ratings_all.rds")
 ```
