@@ -30,7 +30,7 @@ gen_rat_plot <- working_data |>
        subtitle = "Originals from the Heartwarming genre receive the highest ratings\nwhile Superhero Originals receive the lowest",
        x = "Genre",
        y = "Average Rating",
-       caption = "Source: Iridazzle on Kaggle (June 30, 2022)") +
+       caption = "Source: Iridazzle on Kaggle (June 2022)") +
   scale_fill_manual(values = "#00dc64",
                     labels = "Users' Average Rating of all Originals per Genre")
 

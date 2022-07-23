@@ -27,7 +27,7 @@ gen_sub_plot <- working_data |>
          y = "Number of Subscribers (in millions)",
          title = "Most Subscribed-to Genres Among WEBTOON Originals",
          subtitle = "The most subscribed-to genre is Romance",
-         caption = "Source: Iridazzle on Kaggle (June, 2022)") +
+         caption = "Source: Iridazzle on Kaggle (June 2022)") +
     theme_minimal() +
     theme(plot.title = element_text(face = "bold"),
           panel.grid.major.x = element_blank(),
