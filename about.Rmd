@@ -22,6 +22,8 @@ Hey! It's me, that little voice writing out all these words, finally introducing
 
 I love music, reading, stories, and art (as you may have guessed 😅).
 
+
+## Contact
 Feel free to reach out with any **music/book/WEBTOON recommendations**, **questions/suggestions** for this project, or **opportunities to further explore data science**!
   + [📧 tokatiezhong@gmail.com](mailto:tokatiezhong@gmail.com)
   + [💼 LinkedIn](https://www.linkedin.com/in/katie-zhong-163684163/)

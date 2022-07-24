@@ -9,6 +9,7 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 
 library(distill)
+library(DT)
 library(ggplot2)
 library(gt)
 library(janitor)
@@ -17,8 +18,6 @@ library(plotly)
 library(readxl)
 library(rvest)
 library(tidyverse)
-
-working_data <- read_rds("webtoon-data.rds")
 
 # Note that the use of whitespace in the code below prevents various undesired formatting errors on the website
 ```
@@ -48,29 +47,18 @@ include_graphics("pop_all_genres.png")
 
 
 
-**Figure 2**
+**Table 1**
 
 
 
 ```{r originals_per_genre_table, echo=FALSE}
-# Putting this code here is a measure to avoid other text being knitted into the website instead of the desired formatted table
-
-working_data |>
-  group_by(genre)|>
-  summarize(num = n()) |>
-  select(genre, num) |>
-  arrange(desc(num)) |>
-  
-  gt() |>
-  tab_header(title = md("**WEBTOON Originals per Genre**")) |>
-  cols_label(genre = "Genre",
-             num = "Number of Originals") |>
-  tab_source_note(md("*Kaggle Dataset (iridazzle, 2022)*"))
+read_rds(file = "originals_per_genre.rds")
 ```
-*Genre distribution in the sample dataset of 774 WEBTOONs. (Kaggle, 2022)*
+*(Kaggle, 2022)*
 
 
 ## Genres and Popularity
+**Figure 2**
 ```{r genre_ratings_plot}
 include_graphics("genre_ratings.png")
 ```
@@ -79,6 +67,7 @@ include_graphics("genre_ratings.png")
 Note that the y-axis scale starts at 8.5 to emphasize the rating differences. Average series ratings are about the same for Originals across all genres, with Originals from the Heartwarming genre receiving the highest and Originals from the Superhero genre receiving the lowest.
 
 
+**Figure 3**
 ```{r genre_subscribers_plot}
 include_graphics("genre_subscribers.png")
 ```
@@ -90,10 +79,14 @@ Heartwarming ranking last in subscriber-based popularity, despite receiving the 
 
 
 ## Subscribers vs. Ratings
+**Figure 4: Relationship between Subscribers and Ratings of WEBTOON Originals by Genre**
+
 ```{r subscribers_ratings_all_plot}
 read_rds(file = "subscribers_ratings_all.rds")
 ```
 
+
+**Figure 5: Relationship between Subscribers and Ratings of WEBTOON Originals**
 ```{r subscribers_ratings_genre_plot}
 read_rds(file = "subscribers_ratings_genre.rds")
 ```

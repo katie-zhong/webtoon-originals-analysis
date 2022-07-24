@@ -18,21 +18,22 @@ gen_sub_plot <- working_data |>
   
   ggplot(aes(x = fct_reorder(genre, milSubscribers),
              y = milSubscribers,
-             fill = webt_green)) +
-    geom_bar(position = "dodge", stat = "identity") +
-    coord_flip() +
-    scale_fill_manual(values = c("#00DC64")) +
+             fill = milSubscribers)) +
+  geom_bar(position = "dodge", stat = "identity") +
+  coord_flip() +
   
-    labs(x = "Genre",
-         y = "Number of Subscribers (in millions)",
-         title = "Most Subscribed-to Genres Among WEBTOON Originals",
-         subtitle = "The most subscribed-to genre is Romance",
-         caption = "Source: Iridazzle on Kaggle (June 2022)") +
-    theme_minimal() +
-    theme(plot.title = element_text(face = "bold"),
-          panel.grid.major.x = element_blank(),
-          panel.grid.minor.x = element_blank(),
-          axis.line = element_line(colour = "black"),
-          legend.position = "none")
+  theme_minimal() +
+  theme(plot.title = element_text(face = "bold"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        axis.line = element_line(colour = "black"),
+        legend.position = "none") +
+  scale_fill_gradient(low = "green",
+                      high = dark_green) +
+  labs(title = "Most Subscribed-to Genres Among WEBTOON Originals",
+       subtitle = "The most subscribed-to genre is Romance",
+       x = "Genre",
+       y = "Number of Subscribers (in millions)",
+       caption = "Source: Kaggle (June 2022)")
 
 ggsave("genre_subscribers.png", gen_sub_plot)

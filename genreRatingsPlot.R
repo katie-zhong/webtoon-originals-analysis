@@ -12,7 +12,7 @@ gen_rat_plot <- working_data |>
   
   ggplot(aes(x = fct_reorder(genre, avg_rating, .desc = TRUE),
              y = avg_rating,
-             fill = webt_green)) +
+             fill = avg_rating)) +
   geom_col(position = "dodge") +
   coord_cartesian(ylim = c(8.5,10)) +
   
@@ -26,12 +26,12 @@ gen_rat_plot <- working_data |>
         panel.grid.major = element_blank(),
         axis.line = element_line(colour = "black"),
         legend.position = "none") +
-  labs(title = "Average Ratings Per Genre",
+  scale_fill_gradient(low = "black",
+                      high = "green") +
+  labs(title = "Series Average Ratings Per Genre",
        subtitle = "Originals from the Heartwarming genre receive the highest ratings\nwhile Superhero Originals receive the lowest",
        x = "Genre",
        y = "Average Rating",
-       caption = "Source: Iridazzle on Kaggle (June 2022)") +
-  scale_fill_manual(values = "#00dc64",
-                    labels = "Users' Average Rating of all Originals per Genre")
+       caption = "Source: Kaggle (June 2022)")
 
 ggsave("genre_ratings.png", gen_rat_plot)

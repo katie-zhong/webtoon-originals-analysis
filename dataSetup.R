@@ -22,5 +22,7 @@ webt_data <- read_csv(file = "webtoon_originals_en.csv") |>
 write_rds(webt_data, "webtoon-data.rds")
 working_data <- read_rds("webtoon-data.rds")
 
+high_green <- "#00ff74"
 webt_green <- "#00dc64"
-dark_green <- "#101f09"
+mid_green <- "#128b4f"
+dark_green <- "#117945"
