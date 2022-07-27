@@ -28,7 +28,6 @@ sub_rat_all_plot <- working_data |>
                           "Status:", status, "\n",
                           "Synopsis:", synopsis, "\n"))) +
   geom_point(alpha = 0.8, size = 0.5) +
-  geom_smooth(method = "loess", formula = y~s, color = "black", se = FALSE) +
   
   labs(x = "Number of Subscribers (in millions)",
        y = "Series Rating",

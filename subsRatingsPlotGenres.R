@@ -31,7 +31,6 @@ sub_rat_gen_plot <- working_data |>
                           "Status:", status, "\n",
                           "Synopsis:", synopsis, "\n"))) +
   geom_point(alpha = 0.8, size = 0.5) +
-  geom_smooth(method = "loess", formula = y~s, color = "black", size = 60, se = FALSE) +
   facet_wrap(~ genre) +
   
   labs(x = "Number of Subscribers (in millions)",

@@ -36,4 +36,4 @@ gen_sub_plot <- working_data |>
        y = "Number of Subscribers (in millions)",
        caption = "Source: Kaggle (June 2022)")
 
-#ggsave("genre_subscribers.png", gen_sub_plot)
+ggsave("genre_subscribers.png", gen_sub_plot)
