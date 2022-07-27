@@ -18,7 +18,7 @@ gen_sub_plot <- working_data |>
   
   ggplot(aes(x = fct_reorder(genre, milSubscribers),
              y = milSubscribers,
-             fill = milSubscribers)) +
+             fill = desc(milSubscribers))) +
   geom_bar(position = "dodge", stat = "identity") +
   coord_flip() +
   
@@ -36,4 +36,4 @@ gen_sub_plot <- working_data |>
        y = "Number of Subscribers (in millions)",
        caption = "Source: Kaggle (June 2022)")
 
-ggsave("genre_subscribers.png", gen_sub_plot)
+#ggsave("genre_subscribers.png", gen_sub_plot)
