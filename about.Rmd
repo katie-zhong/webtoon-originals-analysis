@@ -14,7 +14,7 @@ This project attempts to answer the question *What Makes a WEBTOON Original Succ
 
 **This project was created as part of the amazing [David Kane's Data Science Course](https://bootcamp.davidkane.info/), offered by [former Harvard Preceptor David Kane](https://www.davidkane.info/).**
 
-**The warmest of thank yous to the wonderful Preceptor Kane, our superhero TFs, and the supportive classmates that made this experience so enjoyable and rewarding! :)**
+**The warmest of thank yous to Preceptor Kane, our superhero TFs, and the supportive classmates that made this experience so enjoyable and rewarding! :)**
 
 
 ## About The Creator
@@ -25,6 +25,7 @@ I love music, reading, stories, and art (as you may have guessed 😅).
 
 ## Contact
 Feel free to reach out with any **music/book/WEBTOON recommendations**, **questions/suggestions** for this project, or **opportunities to further explore data science**!
-  + [📧 tokatiezhong@gmail.com](mailto:tokatiezhong@gmail.com)
-  + [💼 LinkedIn](https://www.linkedin.com/in/katie-zhong-163684163/)
-  + [🐱‍💻 GitHub](https://github.com/katie-zhong)
+
+* 📧 [tokatiezhong@gmail.com](mailto:tokatiezhong@gmail.com)
+* 💼 [LinkedIn](https://www.linkedin.com/in/katie-zhong-163684163/)
+* 🐱‍💻 [GitHub](https://github.com/katie-zhong)
