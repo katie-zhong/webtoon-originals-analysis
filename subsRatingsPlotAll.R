@@ -24,6 +24,8 @@ sub_rat_all_plot <- working_data |>
              color = rating,
              text = paste("Title:", title, "\n",
                           "Author(s):", authors, "\n",
+                          "Rating:", rating, "\n",
+                          "Subscribers (mil):", subscribers, "\n\n",
                           "Genre:", genre, "\n",
                           "Status:", status, "\n",
                           "Synopsis:", synopsis, "\n"))) +

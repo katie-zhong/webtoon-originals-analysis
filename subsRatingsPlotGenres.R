@@ -27,6 +27,8 @@ sub_rat_gen_plot <- working_data |>
              color = rating,
              text = paste("Title:", title, "\n",
                           "Author(s):", authors, "\n",
+                          "Rating:", rating, "\n",
+                          "Subscribers (mil):", subscribers, "\n\n",
                           "Genre:", genre, "\n",
                           "Status:", status, "\n",
                           "Synopsis:", synopsis, "\n"))) +
@@ -38,11 +40,7 @@ sub_rat_gen_plot <- working_data |>
        caption = "Kaggle (June, 2022)",
        color = "Rating") +
   scale_colour_gradient(low = dark_green,
-                        high = webt_green,
-                        space = "Lab",
-                        na.value = "grey50",
-                        guide = "colourbar",
-                        aesthetics = "colour")
+                        high = webt_green)
 
 gg_sub_rat_gen <- ggplotly(sub_rat_gen_plot)
 
