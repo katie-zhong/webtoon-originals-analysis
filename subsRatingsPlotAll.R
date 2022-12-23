@@ -36,11 +36,8 @@ sub_rat_all_plot <- working_data |>
        caption = "Kaggle (June, 2022)",
        color = "Rating") +
   scale_colour_gradient(low = dark_green,
-                        high = webt_green,
-                        space = "Lab",
-                        na.value = "grey50",
-                        guide = "colourbar",
-                        aesthetics = "colour")
+                        high = webt_green)
 
 gg_sub_rat_all <- ggplotly(sub_rat_all_plot, tooltip = "text")
+
 write_rds(gg_sub_rat_all, "subscribers_ratings_all.rds")

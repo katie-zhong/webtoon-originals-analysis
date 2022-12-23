@@ -19,35 +19,37 @@ library(readxl)
 library(rvest)
 library(tidyverse)
 
-# Note that the use of whitespace in the code below prevents various undesired formatting errors on the website
+# Note that the use of whitespace in the code below prevents various undesired formatting errors on the knitted website
 ```
 
 # **0. Introduction**
-Visual storytelling has been around for ages—ever since humans smeared berry juice on cave walls with sticks for their own enjoyment.
+Visual storytelling has been around for ages—ever since humans smeared berry juice on cave walls with sticks.
 
 In the modern age, WEBTOON provides a platform for anyone anywhere to upload their own visual stories for readers around the world to read for free.
 
-WEBTOON is a veritable treasure trove of stories, perfect for a bad day pick-me-up or to inspire you to take charge of your own story. And though each is valuable in its own way, some stories still do better than others. Why?
+WEBTOON is a veritable treasure trove of stories, perfect for a bad day pick-me-up or to inspire you to take charge as the main character of your own story. And though each is valuable in its own way, some stories still do better than others. Why?
 
 
 ### **Metrics of Success**
 Cut-and-dry figures are not necessarily the sole indicator of a "good" WEBTOON, but data analysis can identify patterns in Originals that statistically perform well among readers.
 
-What defines success? Popularity? Quality? Both? And could these factors be related?
+What defines success? Popularity among readers? Quality of the series? Both? And could these factors be related?
 
 To measure both popularity and quality, the following metrics of success are compared to variables such as genre:
 
-* **Number of subscribers** (in millions)
-  + Measures popularity
-  + Also provides some minor indication of quality (as a general rule, people are more likely to be drawn to content within a certain quality threshold)
+* **Number of subscribers (in millions)**
+    + Measures popularity
+    + Also provides some minor indication of quality (as a general rule, people are more likely to be drawn to content within a certain quality threshold)
 
-* **Average series rating** (rated from 0-10 by readers)
-  + Measures quality
-  + Also provides some minor indication of popularity (readers are likely to rate their favorite series higher, in which case emotional connection can prevail over perceived quality)
+* **Average series rating (rated from 0-10 by readers)**
+    + Measures quality
+    + Also provides some minor indication of popularity (readers are likely to rate their favorite series higher, in which case emotional connection can prevail over perceived quality)
   
   
   
 ### **WEBTOON Top Originals**
+Originals are WEBTOON-sponsored stories. Original series are provided a company editor, advertisement priority on the WEBTOON app, and other benefits.
+
 WEBTOON compiles their own list of "Top" (most popular) Originals, which almost certainly  considers many more factors than the two analyzed in this project.
 
 As ranked by WEBTOON, the most popular Originals across all genres are:
@@ -74,8 +76,6 @@ read_rds(file = "originals_per_genre.rds")
 ##### *(Kaggle, 2022)*
 
 Note that some genres contain notably more Originals than others and that the genre distribution does not directly parallel the distribution of average ratings (Figure 2) nor subscribers (Figure 3) across genres.
-
-This is because the relationship between demand and supply is not linear (many authors may prioritize personal fulfillment over creating a "popular" series), though strongly proportional.
   
   
   
@@ -130,7 +130,11 @@ To determine if subscribers (largely representing popularity) and ratings (large
 read_rds(file = "subscribers_ratings_all.rds")
 ```
 ##### *(Kaggle, 2022)*
-S
+
+The overall correlation between subscribers and ratings is high; series with higher subscriber counts also tend to have higher ratings, and vice versa. This proves that popularity (measured by subscribers) and quality (measured by ratings) are related.
+  
+  
+  
   
   
   
@@ -139,6 +143,8 @@ S
 read_rds(file = "subscribers_ratings_genre.rds")
 ```
 ##### *(Kaggle, 2022)*
+
+The observations from the subscribers-rating relationship across all genres
   
   
   

@@ -13,7 +13,7 @@ library(tidyverse)
 # as success can still be measured with the same variables that apply to older Originals. Though newer Originals are more heavily promoted,
 # older Originals also received the same treatment when they were launched.
 
-# Margin of plot titles don't seem to work with ggplotly interactive plots and affected readibility.
+# Margin of plot titles don't seem to work with ggplotly interactive plots and affected readability.
 # Added title through Distill website in file index.Rmd instead.
 
 sub_rat_gen_plot <- working_data |>
@@ -22,26 +22,32 @@ sub_rat_gen_plot <- working_data |>
   mutate(synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
   arrange(desc(subscribers)) |>
   
+  
   ggplot(aes(x = subscribers,
-             y = rating,
-             color = rating,
-             text = paste("Title:", title, "\n",
-                          "Author(s):", authors, "\n",
-                          "Rating:", rating, "\n",
-                          "Subscribers (mil):", subscribers, "\n\n",
-                          "Genre:", genre, "\n",
-                          "Status:", status, "\n",
-                          "Synopsis:", synopsis, "\n"))) +
-  geom_point(alpha = 0.8, size = 0.5) +
+             y = rating)) +
+  
+  geom_point(alpha = 0.8, size = 0.5,
+             aes(color = rating,
+                 text = paste("Title:", title, "\n",
+                              "Author(s):", authors, "\n",
+                              "Rating:", rating, "\n",
+                              "Subscribers (mil):", subscribers, "\n\n",
+                              "Genre:", genre, "\n",
+                              "Status:", status, "\n",
+                              "Synopsis:", synopsis, "\n"))) +
+  
+  geom_smooth(method = "loess", formula = y~x, se = FALSE,
+              colour = "brown2", size = 0.2) +
+  
   facet_wrap(~ genre) +
   
-  labs(x = "Number of Subscribers (in millions)",
+  labs(x = "Subscribers (in millions)",
        y = "Series Rating",
        caption = "Kaggle (June, 2022)",
        color = "Rating") +
   scale_colour_gradient(low = dark_green,
                         high = webt_green)
 
-gg_sub_rat_gen <- ggplotly(sub_rat_gen_plot)
+gg_sub_rat_gen <- ggplotly(sub_rat_gen_plot, tooltip = "text")
 
 write_rds(gg_sub_rat_gen, "subscribers_ratings_genre.rds")
