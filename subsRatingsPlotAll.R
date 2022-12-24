@@ -15,23 +15,27 @@ library(tidyverse)
 
 sub_rat_all_plot <- working_data |>
   select(title, genre, authors, weekdays, length, subscribers, rating, status, synopsis, length) |>
-  mutate(subscribers = subscribers/1000000) |>
-  mutate(synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
+  mutate(subscribers = round(subscribers/1000000, 2),
+         synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
   arrange(desc(subscribers)) |>
   
   ggplot(aes(x = subscribers,
-             y = rating,
-             color = rating,
-             text = paste("Title:", title, "\n",
-                          "Author(s):", authors, "\n",
-                          "Rating:", rating, "\n",
-                          "Subscribers (mil):", subscribers, "\n\n",
-                          "Genre:", genre, "\n",
-                          "Status:", status, "\n",
-                          "Synopsis:", synopsis, "\n"))) +
-  geom_point(alpha = 0.8, size = 0.5) +
+             y = rating)) +
   
-  labs(x = "Number of Subscribers (in millions)",
+  geom_point(alpha = 0.8, size = 0.5,
+             aes(color = rating,
+                 text = paste("Title:", title, "\n",
+                              "Author(s):", authors, "\n",
+                              "Rating:", rating, "\n",
+                              "Subscribers (mil):", subscribers, "\n\n",
+                              "Genre:", genre, "\n",
+                              "Status:", status, "\n",
+                              "Synopsis:", synopsis, "\n"))) +
+  
+  geom_smooth(method = "loess", formula = y~x, se = FALSE,
+              colour = "brown2", size = 0.5) +
+  
+  labs(x = "Subscribers (in millions)",
        y = "Series Rating",
        caption = "Kaggle (June, 2022)",
        color = "Rating") +

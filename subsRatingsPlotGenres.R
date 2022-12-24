@@ -18,8 +18,8 @@ library(tidyverse)
 
 sub_rat_gen_plot <- working_data |>
   select(title, genre, authors, weekdays, length, subscribers, rating, status, synopsis, length) |>
-  mutate(subscribers = subscribers/1000000) |>
-  mutate(synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
+  mutate(subscribers = round(subscribers/1000000, 2),
+         synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
   arrange(desc(subscribers)) |>
   
   
