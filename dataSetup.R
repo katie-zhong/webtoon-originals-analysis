@@ -1,4 +1,6 @@
 library(distill)
+library(DT)
+library(gt)
 library(janitor)
 library(rvest)
 library(tidyverse)

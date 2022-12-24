@@ -35,7 +35,7 @@ Cut-and-dry figures are not necessarily the sole indicator of a "good" WEBTOON, 
 
 What defines success? Popularity among readers? Quality of the series? Both? And could these factors be related?
 
-To measure both popularity and quality, the following metrics of success are compared to variables such as genre:
+To measure both popularity and quality, the following metrics of success are compared to genre:
 
 * **Number of subscribers (in millions)**
     + Measures popularity
@@ -144,7 +144,9 @@ read_rds(file = "subscribers_ratings_genre.rds")
 ```
 ##### *(Kaggle, 2022)*
 
-The observations from the subscribers-rating relationship across all genres
+The observations regarding the subscribers-rating relationship across all genres still holds for most individual genres. SPORTS and TIPTOON, however, both appear to have a weak correlation between subscribers and ratings.
+
+Note that TIPTOON is a special case: all the series under the genre are created by WEBTOON and are mostly informational.
   
   
   
@@ -152,4 +154,12 @@ The observations from the subscribers-rating relationship across all genres
   
   
 # 3. Conclusion
+Through this analysis, we conclude that 
+
+## Table 2
+```{r final_originals_table, echo=FALSE}
+read_rds(file = "custom_top_originals.rds")
+```
+##### *(Kaggle, 2022)*
+
 Viewer ratings and subscriber counts prove that Romance and Fantasy Originals are the most popular.
