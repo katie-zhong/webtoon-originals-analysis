@@ -154,12 +154,16 @@ Note that TIPTOON is a special case: all the series under the genre are created 
   
   
 # 3. Conclusion
-Through this analysis, we conclude that 
+Through this analysis, we conclude that popularity, quality, and genre all provide insight into the success of a WEBTOON Original.
 
 ## Table 2
 ```{r final_originals_table, echo=FALSE}
 read_rds(file = "custom_top_originals.rds")
 ```
 ##### *(Kaggle, 2022)*
+
+*Note: Toggle with the Subscribers and Rating column filters to see how the chart changes when popularity or quality are the primary factor for success.*
+
+From the predicted Top 10 chart, 
 
 Viewer ratings and subscriber counts prove that Romance and Fantasy Originals are the most popular.

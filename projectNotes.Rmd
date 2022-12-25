@@ -22,3 +22,4 @@ You can also see this project's [Github repo here](https://github.com/katie-zhon
 * [Gradient colour scales (scale_colour_gradient)	- ggplot2 Documentation](https://ggplot2.tidyverse.org/reference/scale_gradient.html)
 * [R Built-in Colors Cheat Sheet - Dr. Ying Wei](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
 * [Trendline not appearing error - Stack Overflow](https://stackoverflow.com/questions/70107287/why-is-my-trendline-not-appearing-in-my-plot)
+* [Adjustable table column sort filters - R Project](https://search.r-project.org/CRAN/refmans/DT/html/datatable.html)

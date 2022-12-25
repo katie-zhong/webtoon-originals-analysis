@@ -11,11 +11,14 @@ library(tidyverse)
 
 # str_replace() for pattern = "_" is used twice to change the second pattern occurrence in SLICE_OF_LIFE
 
+# The TIPTOON genre was renamed as INFORMATIVE by WEBTOON
+
 
 webt_data <- read_csv(file = "webtoon_originals_en.csv") |>
   clean_names() |>
   as_tibble() |>
   mutate(genre = str_replace(genre, pattern = "SF", "SCI-FI")) |>
+  mutate(genre = str_replace(genre, pattern = "TIPTOON", "INFORMATIVE")) |>
   mutate(genre = str_replace(genre, pattern = "_", " ")) |>
   mutate(genre = str_replace(genre, pattern = "_", " ")) |>
   mutate(genre = str_replace(genre, pattern = "SUPER HERO", "SUPERHERO")) |>
