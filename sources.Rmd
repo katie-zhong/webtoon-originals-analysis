@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 See [Project Notes](https://katie-zhong.github.io/webtoon-originals-analysis/projectNotes.html) for more specific R-related sources!
 
-* The [dataset](https://www.kaggle.com/datasets/iridazzle/webtoon-originals-datasets) used in this project is sourced from [Kaggle user Iridazzle](https://www.kaggle.com/iridazzle). [@iridazzle]
+* The [dataset](https://www.kaggle.com/datasets/iridazzle/webtoon-originals-datasets) used in this project is sourced from [Kaggle user Iridazzle](https://www.kaggle.com/iridazzle), retrieved on June 30th, 2022. [@iridazzle]
 
 * The R code behind this project was learned through [Primer.data] and it's accompanying written guide, [Preceptor's Primer for Bayesian Data Science](https://ppbds.github.io/primer/index.html). [@primerdata]
 

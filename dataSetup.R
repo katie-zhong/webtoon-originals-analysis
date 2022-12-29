@@ -27,7 +27,20 @@ webt_data <- read_csv(file = "webtoon_originals_en.csv") |>
 write_rds(webt_data, "webtoon-data.rds")
 working_data <- read_rds("webtoon-data.rds")
 
+data_by_genres <- working_data |>
+  select(genre, rating) |>
+  group_by(genre)
+
+cleaned_data_all <- working_data |>
+  select(title, genre, authors, weekdays, length, subscribers, rating, status, synopsis, length) |>
+  mutate(subscribers = round(subscribers/1000000, 2),
+         synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
+  arrange(desc(subscribers))
+
 high_green <- "#00ff74"
 webt_green <- "#00dc64"
 mid_green <- "#128b4f"
-dark_green <- "#117945"
+dark_green <- "#117945" 
+darkish_green <- "#0c4e2d"
+darkest_green <- "#083a21"
+          

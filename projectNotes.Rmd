@@ -23,3 +23,8 @@ You can also see this project's [Github repo here](https://github.com/katie-zhon
 * [R Built-in Colors Cheat Sheet - Dr. Ying Wei](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
 * [Trendline not appearing error - Stack Overflow](https://stackoverflow.com/questions/70107287/why-is-my-trendline-not-appearing-in-my-plot)
 * [Adjustable table column sort filters - R Project](https://search.r-project.org/CRAN/refmans/DT/html/datatable.html)
+* [R Pie Charts - Tutorials Point](https://www.tutorialspoint.com/r/r_pie_charts.htm#:~:text=A%20pie%2Dchart%20is%20a,numbers%20as%20a%20vector%20input.)
+* [Merging data frames - RStudio](https://rstudio-pubs-static.s3.amazonaws.com/142359_100fcf07c1244d2c95dfab8901e1b8d3.html)
+* [Add line to ggplot2 - GeeksforGeeks](https://www.geeksforgeeks.org/add-vertical-and-horizontal-lines-to-ggplot2-plot-in-r/)
+* [Add text annotations to ggplot - Stack Overflow](https://stackoverflow.com/questions/28755576/add-text-to-ggplot)
+* [Add variables in strings - Cookbook for R](http://www.cookbook-r.com/Strings/Creating_strings_from_variables/)
