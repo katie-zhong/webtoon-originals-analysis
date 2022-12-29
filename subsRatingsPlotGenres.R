@@ -16,13 +16,7 @@ library(tidyverse)
 # Margin of plot titles don't seem to work with ggplotly interactive plots and affected readability.
 # Added title through Distill website in file index.Rmd instead.
 
-sub_rat_gen_plot <- working_data |>
-  select(title, genre, authors, weekdays, length, subscribers, rating, status, synopsis, length) |>
-  mutate(subscribers = round(subscribers/1000000, 2),
-         synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
-  arrange(desc(subscribers)) |>
-  
-  
+sub_rat_gen_plot <- cleaned_data_all |>
   ggplot(aes(x = subscribers,
              y = rating)) +
   
@@ -45,7 +39,7 @@ sub_rat_gen_plot <- working_data |>
        y = "Series Rating",
        caption = "Kaggle (June, 2022)",
        color = "Rating") +
-  scale_colour_gradient(low = dark_green,
+  scale_colour_gradient(low = darkish_green,
                         high = webt_green)
 
 gg_sub_rat_gen <- ggplotly(sub_rat_gen_plot, tooltip = "text")

@@ -13,12 +13,7 @@ library(tidyverse)
 # as success can still be measured with the same variables that apply to older Originals. Though newer Originals are more heavily promoted,
 # older Originals also received the same treatment when they were launched.
 
-sub_rat_all_plot <- working_data |>
-  select(title, genre, authors, weekdays, length, subscribers, rating, status, synopsis, length) |>
-  mutate(subscribers = round(subscribers/1000000, 2),
-         synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
-  arrange(desc(subscribers)) |>
-  
+sub_rat_all_plot <- cleaned_data_all |>
   ggplot(aes(x = subscribers,
              y = rating)) +
   
@@ -39,7 +34,7 @@ sub_rat_all_plot <- working_data |>
        y = "Series Rating",
        caption = "Kaggle (June, 2022)",
        color = "Rating") +
-  scale_colour_gradient(low = dark_green,
+  scale_colour_gradient(low = darkish_green,
                         high = webt_green)
 
 gg_sub_rat_all <- ggplotly(sub_rat_all_plot, tooltip = "text")

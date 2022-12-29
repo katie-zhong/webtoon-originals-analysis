@@ -5,16 +5,17 @@ library(readxl)
 library(rvest)
 library(tidyverse)
 
-gen_rat_plot <- working_data |>
+rat_data <- working_data |>
   group_by(genre) |>
   summarize(avg_rating = mean(rating)) |>
-  arrange(desc(avg_rating)) |>
-  
+  arrange(desc(avg_rating))
+
+gen_rat_plot <- rat_data |>
   ggplot(aes(x = fct_reorder(genre, avg_rating, .desc = TRUE),
              y = avg_rating,
              fill = avg_rating)) +
   geom_col(position = "dodge") +
-  coord_cartesian(ylim = c(8.5,10)) +
+  coord_cartesian(ylim = c(8.8,9.7)) +
   
   theme(plot.title = element_text(face = "bold"),
         axis.text.x = element_text(angle = 45,
@@ -26,12 +27,25 @@ gen_rat_plot <- working_data |>
         panel.grid.major = element_blank(),
         axis.line = element_line(colour = "black"),
         legend.position = "none") +
+  
   scale_fill_gradient(low = "black",
                       high = "green") +
+  
+  geom_hline(yintercept = mean(rat_data$avg_rating),
+             color = "brown2") +
+  
   labs(title = "Series Average Ratings Per Genre",
-       subtitle = "Originals from the Heartwarming genre receive the highest ratings\nwhile Superhero Originals receive the lowest",
+       subtitle = "Originals from the Heartwarming genre receive the highest ratings (9.70) \nwhile Superhero Originals receive the lowest (8.84).",
        x = "Genre",
        y = "Average Rating",
-       caption = "Source: Kaggle (June 2022)")
+       caption = "Source: Kaggle (June 2022)") + 
+  
+  annotate("text",
+           x = 15.5,
+           y = mean(rat_data$avg_rating)+0.1, 
+           label = sprintf("μ = %s\nδ = %s", 
+                           round(mean(rat_data$avg_rating), 2),
+                           round(sd(rat_data$avg_rating), 2)),
+           color = "brown2")
 
-ggsave("genre_ratings.png", gen_rat_plot)
+write_rds(gen_rat_plot, "genre_ratings.rds")

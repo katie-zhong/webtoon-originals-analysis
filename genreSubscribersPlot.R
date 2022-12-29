@@ -11,14 +11,14 @@ library(tidyverse)
 gen_sub_plot <- working_data |>
   select(genre, subscribers) |>
   group_by(genre) |>
-  summarize(milSubscribers = sum(subscribers)/1000000) |>
+  summarize(mil_subscribers = sum(subscribers)/1000000) |>
   
-  select(genre, milSubscribers) |>
-  arrange(desc(milSubscribers)) |>
+  select(genre, mil_subscribers) |>
+  arrange(desc(mil_subscribers)) |>
   
-  ggplot(aes(x = fct_reorder(genre, milSubscribers),
-             y = milSubscribers,
-             fill = desc(milSubscribers))) +
+  ggplot(aes(x = fct_reorder(genre, mil_subscribers),
+             y = mil_subscribers,
+             fill = desc(mil_subscribers))) +
   geom_bar(position = "dodge", stat = "identity") +
   coord_flip() +
   
@@ -29,11 +29,11 @@ gen_sub_plot <- working_data |>
         axis.line = element_line(colour = "black"),
         legend.position = "none") +
   scale_fill_gradient(low = "green",
-                      high = dark_green) +
+                      high = darkish_green) +
   labs(title = "Most Subscribed-to Genres Among WEBTOON Originals",
-       subtitle = "The most subscribed-to genre is Romance",
+       subtitle = "The most subscribed-to genre is Romance (102 million) and the least is Heartwarming (0.47 million).",
        x = "Genre",
-       y = "Number of Subscribers (in millions)",
+       y = "Subscribers (millions)",
        caption = "Source: Kaggle (June 2022)")
 
-ggsave("genre_subscribers.png", gen_sub_plot)
+write_rds(gen_sub_plot, "genre_subscribers.rds")
