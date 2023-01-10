@@ -143,7 +143,7 @@ Consider also that a series' higher subscriber count indicates a larger audience
 
 We investigate this relationship in Figure 5.
 
-*The following figures are interactive; hover over any point to see the series' details.*
+*The following figures are interactive; hover over any point to see series details.*
 
 
 
