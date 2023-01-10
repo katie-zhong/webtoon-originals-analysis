@@ -7,7 +7,8 @@ library(tidyverse)
 
 
 # In the original CSV, apostrophes are replaced with unquoted string "â€™" in the synopses. 
-# To improve reader understanding, mutate() is used to remedy this error
+# Also, multiple authors are separated with a comma with no space after.
+# To improve readibility, mutate() is used to make these fixes
 
 # str_replace() for pattern = "_" is used twice to change the second pattern occurrence in SLICE_OF_LIFE
 
@@ -17,6 +18,7 @@ library(tidyverse)
 webt_data <- read_csv(file = "webtoon_originals_en.csv") |>
   clean_names() |>
   as_tibble() |>
+  mutate(authors = str_replace_all(authors, pattern = ",", ", ")) |>
   mutate(genre = str_replace(genre, pattern = "SF", "SCI-FI")) |>
   mutate(genre = str_replace(genre, pattern = "TIPTOON", "INFORMATIVE")) |>
   mutate(genre = str_replace(genre, pattern = "_", " ")) |>
@@ -36,6 +38,8 @@ cleaned_data_all <- working_data |>
   mutate(subscribers = round(subscribers/1000000, 2),
          synopsis = str_wrap(synopsis, width = 90, exdent = 18)) |>
   arrange(desc(subscribers))
+
+write_rds(cleaned_data_all, "cleaned_data_all.rds")
 
 high_green <- "#00ff74"
 webt_green <- "#00dc64"
