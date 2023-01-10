@@ -28,8 +28,12 @@ gen_sub_plot <- sub_data |>
         panel.grid.minor.x = element_blank(),
         axis.line = element_line(colour = "black"),
         legend.position = "none") +
+  
   scale_fill_gradient(low = "green",
                       high = darkish_green) +
+  
+  geom_hline(yintercept = mean(sub_data$mil_subscribers),
+             color = "brown2") +
   
   labs(title = "Most Subscribed-to Genres Among WEBTOON Originals",
        subtitle = "The most subscribed-to genre is Romance (102 million) and the least is Heartwarming (0.47 million).",
@@ -38,11 +42,11 @@ gen_sub_plot <- sub_data |>
        caption = "Source: Kaggle (June 2022)") + 
   
   annotate("text",
-           x = 15.5,
-           y = mean(rat_data$avg_rating)+0.12, 
+           x = 1.2,
+           y = 27, 
            label = sprintf("μ = %s\nδ = %s", 
-                           round(mean(sub_data$avg_rating), 2),
-                           round(sd(rat_data$avg_rating), 2)),
+                           round(mean(sub_data$mil_subscribers), 2),
+                           round(sd(sub_data$mil_subscribers), 2)),
            color = "brown2")
 
 write_rds(gen_sub_plot, "genre_subscribers.rds")
