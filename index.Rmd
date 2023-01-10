@@ -22,7 +22,7 @@ library(tidyverse)
 # Note that the use of whitespace in the code below prevents various undesired formatting errors on the knitted website
 ```
 
-# **0. Introduction**
+## **0. Introduction**
 Visual storytelling has been around for ages—ever since humans smeared berry juice on cave walls with sticks.
 
 In the modern age, WEBTOON provides a platform for anyone anywhere to upload their own visual stories for readers around the world to read for free.
@@ -49,7 +49,7 @@ The following data is pulled from [WEBTOON's list of most popular Originals acro
 
 
 
-## Figure 1
+# Figure 1
 ```{r popular_all_genres_image}
 include_graphics("pop_all_genres.png")
 ```
@@ -63,37 +63,29 @@ To conclude this project, we generate a list of 10 Originals that perform well a
   
   
   
+## 1. Genres, Subscribers, and Ratings
 ### WEBTOON Genres
-Figure 1 displays which genres contain more Originals.
+Figure 2 displays which genres contain more Originals.
 
 
 
-## Figure 1
+# Figure 2
 ```{r percent_originals_per_genre_plot, echo=FALSE}
 read_rds("genre_perc.rds")
 ```
 ##### *(Kaggle, 2022)*
 
-Note that some genres contain notably more Originals than others (Fantasy and Romance) and that the genre distribution does not completely parallel the distribution of average subscribers (Figure 2) nor ratings (Figure 3) across genres.
+Note that some genres contain notably more Originals than others (Fantasy and Romance) and that the genre distribution does not completely parallel the distribution of average subscribers (Figure 3) nor ratings (Figure 4) across genres.
 
 From this observation, we determine that genre does indeed have some effect on a series' success.
-  
-  
-  
-# 1. Genres, Subscribers, and Ratings
-Subscribers and series rating are the strongest statistic indicators of a series' success among readers.
-
-Series ratings are optional and entirely reader-contributed. Some factors readers may consider when voting on series ratings are:
-
-+ Art quality
-+ Writing quality (i.e. plot, characters)
-+ Reader's enjoyment
-
-We see this factors at play in Figures 2 and 3, below.
 
 
 
-## Figure 2
+### Number of Subscribers
+Subscribers are a strong indicator of a series' popularity.
+We see which genres are most popular in Figure 3, below.
+
+# Figure 3
 ```{r genre_subscribers_plot}
 read_rds("genre_subscribers.rds")
 ```
@@ -102,32 +94,60 @@ Romance wins by a landslide! How very romantic of you, WEBTOON readers. Note tha
 Additionally, Action and Drama, despite falling in the middle of the ratings distribution by genre (Figure 3), rank a close third and fourth in subscriber counts.
 
 
+Also note that for the number of subscribers in millions for all series, regardless of genre, the mean μ is 0.46, and the standard deviation δ is 0.67 (computations below).
+
+```{r all_series_subs, echo=TRUE}
+cda <- read_rds("cleaned_data_all.rds")
+
+round(mean(cda$subscribers), 2)
+round(sd(cda$subscribers), 2)
+```
+
+
+
+### Series Rating
+Series ratings provide a statistic indicator of series quality, as well as popularity.
+
+Series ratings are optional and entirely reader-contributed. Some factors readers may consider when voting on series ratings are:
+
++ Art quality
++ Writing quality (i.e. plot, characters)
++ Reader's enjoyment
   
-## Figure 3
+# Figure 4
 ```{r genre_ratings_plot}
 read_rds("genre_ratings.rds")
 ```
-Despite receiving the highest ratings, Heartwarming ranks last in subscriber-based popularity (Figure 2). This conclusion is reasonable, however, seeing as there are only 2 Originals in the entire genre. (WEBTOON authors, do you see this unfulfilled market niche? 👀)
+Despite receiving the highest ratings, Heartwarming ranks last in subscriber-based popularity (Figure 3). This conclusion is reasonable, however, seeing as there are only 2 Originals in the entire genre. (WEBTOON authors, do you see this unfulfilled market niche? 👀)
 
 Note that the y-axis scale of the graph starts at 8.8 to emphasize the rating differences. The standard deviation (δ) is relatively low, so most of the series ratings are quite close to the mean rating (μ) for all genres. Adding a jump to the scale makes it easier to see the minute difference in ratings.
+
+
+Also note that for the ratings for all series, regardless of genre, the mean μ is 9.39, and the standard deviation δ is 0.57 (computations below).
+
+```{r all_series_rats, echo=TRUE}
+working_data <- read_rds("webtoon-data.rds")
+round(mean(working_data$rating), 2)
+round(sd(working_data$rating), 2)
+```
   
   
   
   
   
   
-# 2. Subscribers vs. Ratings
+## 2. Subscribers vs. Ratings
 Some of the previous observations have been surprising: Action and Drama, despite unexceptional ratings, rack up significant subscriber counts. Heartwarming has a low number of subscribers, despite high ratings. These observations lead us to investigate the relationship between subscribers and ratings.
 
 Consider also that a series' higher subscriber count indicates a larger audience. With this increased visibility, more people contribute to the series' rating. As such, it is reasonable to predict that the number of subscribers and ratings are related.
 
-We investigate this relationship in Figure 4.
+We investigate this relationship in Figure 5.
 
 *The following figures are interactive; hover over any point to see the series' details.*
 
 
 
-## Figure 4: Relationship between Subscribers and Ratings
+# Figure 5: Relationship between Subscribers and Ratings
 
 ```{r subscribers_ratings_all_plot}
 read_rds("subscribers_ratings_all.rds")
@@ -136,11 +156,11 @@ read_rds("subscribers_ratings_all.rds")
 
 The overall correlation between subscribers and ratings is somewhat strong and positive. We conclude that series with higher subscriber counts tend to have higher ratings, and low subscriber counts tend to indicate low ratings.
 
-We can also explore this relationship by genre (Figure 5).
+We can also explore this relationship by genre (Figure 6).
   
   
   
-## Figure 5: Relationship between Subscribers and Ratings of WEBTOON Originals by Genre
+# Figure 6: Relationship between Subscribers and Ratings of WEBTOON Originals by Genre
 ```{r subscribers_ratings_genre_plot}
 read_rds("subscribers_ratings_genre.rds")
 ```
@@ -150,31 +170,53 @@ The observations regarding the subscribers-rating relationship across all genres
 
 Note that the red trendline for Superhero does not reflect the general trend for the genre, as it includes an outlier (*unOrdinary*) with a much larger amount of subscribers.
   
-  
-  
-  
-  
-  
-# 3. Conclusion
-We compile our observations about subscribers and ratings per genre in Figure 6.
 
+  
+## 3. Conclusion
+Table 1 compiles the Top 10 WEBTOON Originals with the highest subscriber counts, while Table 2 compiles the Top 10 WEBTOON Originals with the highest ratings.
 
-
-## Figure 6: Subscribers and Ratings per Genre
-```{r sub_rat_genres, echo=FALSE}
-read_rds("genre_sub_rat.rds")
+# Table 1
+```{r top_subscribers_table, echo=FALSE}
+read_rds("top_subscribers.rds")
 ```
+##### *(Kaggle, 2022)*
+
+Note that three of these series are written by Korean creators and translations of the original versions uploaded on Korean WEBTOON platform [Naver](https://www.naver.com/) (*True Beauty, Tower of God, Sweet Home*).
+
+
+# Table 2
+```{r top_ratings_table, echo=FALSE}
+read_rds("top_ratings.rds")
+```
+##### *(Kaggle, 2022)*
+
+Note here also that, interestingly, only one of the series (*Purple Hyacinth*) is not a translated version of Korean creators' work.
 
 
 
-## Table 2
+# Table 3
+
+Finally, our desired end product, Table 3, compiles the top 10 WEBTOON Originals above the mean subscribers count and the mean series rating from all the series in Tables 1 and 2, organized in descending order of number of subscribers *(toggle with the Subscribers, Rating, and Genre column filters to see how the chart changes when different variables are set as the primary measure of success)*.
+
 ```{r final_originals_table, echo=FALSE}
 read_rds("custom_top_originals.rds")
 ```
 ##### *(Kaggle, 2022)*
 
-*Note: Toggle with the Subscribers and Rating column filters to see how the chart changes when popularity or quality are the primary factor for success.*
+Note that three of these series are written by Korean creators and translations of the original versions (*Sweet Home, Tower of God, True Beauty*).
 
-The predicted Top 10 chart From the predicted Top 10 chart, 
 
-Viewer ratings and subscriber counts prove that Romance and Fantasy Originals are the most popular.
+## Thus, we conclude that the most likely factors of success for a WEBTOON Original are:
+1. Belonging to the Romance genre
+
+2. Gaining at least 3 million subscribers (at least 2.63 million subscribers above the average of 0.46 million)
+
+3. Garnering at least a 9.5 rating (0.13 above the 9.39 average rating of all Originals)
+
+
+*Additional Notes*
+* WEBTOON's official Top Originals list is likely based on what is trending (i.e. rapidly increasing in number of subscribers/ratings at the time of data collection. For reference, see [WEBTOON's current Top Originals list](https://www.webtoons.com/en/top), and not what series have been the most consistently popular.
+
+* Translated Korean Naver Originals have accumulated significant success, despite not originally targeting WEBTOON's international, English-reading audience.
+
+See the tabs in the blue header above for more details on this project!

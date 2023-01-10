@@ -42,7 +42,7 @@ gen_rat_plot <- rat_data |>
   
   annotate("text",
            x = 15.5,
-           y = mean(rat_data$avg_rating)+0.1, 
+           y = mean(rat_data$avg_rating)+0.12, 
            label = sprintf("μ = %s\nδ = %s", 
                            round(mean(rat_data$avg_rating), 2),
                            round(sd(rat_data$avg_rating), 2)),
