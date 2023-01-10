@@ -1,10 +1,16 @@
-org_table <- working_data |>
-  select(title, genre, authors, subscribers, rating) |>
-  mutate(subscribers = round(subscribers/1000000, 2))
+st <- sub_table |>
+  arrange(desc(subscribers)) |>
+  slice(1:10)
 
+rt <- rat_table |>
+  arrange(desc(rating)) |>
+  slice(1:10)
+
+org_table <- full_join(st, rt)
+  
 org_table2 <- org_table |>
-  filter(subscribers >= median(org_table$subscribers),
-         rating >= median(org_table$subscribers)) |>
+  filter(subscribers >= mean(org_table$subscribers),
+         rating >= mean(org_table$subscribers)) |>
   arrange(desc(subscribers)) |>
   slice(1:10) |>
   rename("Title" = title,
@@ -17,6 +23,6 @@ org_datatable <- datatable(org_table2,
                            options = list(scrollx = TRUE,
                                           editable = FALSE,
                                           pageLength = 16),
-                           caption = "Table 2: Predicted Top 10 most popular series in the sample dataset.")
+                           caption = "Table 5: Predicted Top 10 most popular series in the sample dataset.")
 
 write_rds(org_datatable, "custom_top_originals.rds")
