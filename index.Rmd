@@ -206,7 +206,7 @@ read_rds("custom_top_originals.rds")
 Note that three of these series are written by Korean creators and translations of the original versions (*Sweet Home, Tower of God, True Beauty*).
 
 
-## Thus, we conclude that the most likely factors of success for a WEBTOON Original are:
+### Thus, we conclude that the most likely factors of success for a WEBTOON Original are:
 1. Belonging to the Romance genre
 
 2. Gaining at least 3 million subscribers (at least 2.63 million subscribers above the average of 0.46 million)
@@ -215,8 +215,10 @@ Note that three of these series are written by Korean creators and translations 
 
 
 *Additional Notes*
+
 * WEBTOON's official Top Originals list is likely based on what is trending (i.e. rapidly increasing in number of subscribers/ratings at the time of data collection. For reference, see [WEBTOON's current Top Originals list](https://www.webtoons.com/en/top), and not what series have been the most consistently popular.
 
 * Translated Korean Naver Originals have accumulated significant success, despite not originally targeting WEBTOON's international, English-reading audience.
 
-See the tabs in the blue header above for more details on this project!
+## 
+See the tabs in the website header for more details on this project!

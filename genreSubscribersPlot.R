@@ -42,8 +42,8 @@ gen_sub_plot <- sub_data |>
        caption = "Source: Kaggle (June 2022)") + 
   
   annotate("text",
-           x = 1.2,
-           y = 27, 
+           x = 2.2,
+           y = 30, 
            label = sprintf("μ = %s\nδ = %s", 
                            round(mean(sub_data$mil_subscribers), 2),
                            round(sd(sub_data$mil_subscribers), 2)),
